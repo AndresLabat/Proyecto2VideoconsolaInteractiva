@@ -25,6 +25,13 @@ body {
     /* filter: blur(5px); */
 }
 
+.textoPresentacion{
+    color: white;
+    text-align: center;
+    margin-bottom: 0.7em;
+    font-size: large;
+}
+
 .divTituloNSW{
     width: 50em;
     height: 6em;
@@ -65,21 +72,58 @@ body {
     align-items: center;
 }
 
-.joyconIzquierdo{
+.consolaConBotones{
+    width: 35.20em;
     height: 21em;
-    width: 7.35em;
-    background-color: #55BEF4;
-    background: linear-gradient(to right, #2b627d  0%, #55BEF4 20%, #55BEF4 80%, #2b627d  100%);
-    border-radius: 4em 0em 0em 4em
 }
 
-.joyconDerecho{
-    height: 21em;
-    width: 7.35em;
-    background: linear-gradient(to right, #8d3931 0%, #F36154 20%, #F36154 80%, #8d3931 100%);
+.botonesPantalla{
+    height: 1em;
+    width: 35.20em;
+    display: flex;
+}
+
+.divBotonPantalla{
+    width: 11.70em;
+    height: 0.9em;
+    display: flex;
+    justify-content:center;
+}
+
+#botonEncendido{
+    width: 3em;
+    height: 0.9em;
     border: 0.1em solid black;
-    border-radius: 0em 4em 4em 0em
-    
+    margin-left: 2em;
+    background-color: #303235; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#volumenDown{
+    width: 2em;
+    height: 0.9em;
+    border: 0.1em solid black;
+    margin-left: 2em;
+    background-color: #303235; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#volumenUp{
+    width: 2em;
+    height: 0.9em;
+    border: 0.1em solid black;
+    margin-left: 0.8em;
+    background-color: #303235; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cuerpoPantalla{
@@ -118,5 +162,31 @@ body {
     filter: grayscale(100%);
 }
 
+.joyconIzquierdo{
+    height: 21em;
+    width: 7.35em;
+    background-color: #55BEF4;
+    background: linear-gradient(to right, #2b627d  0%, #55BEF4 20%, #55BEF4 80%, #2b627d  100%);
+    border-radius: 4em 0em 0em 4em
+}
 
+.joyconDerecho{
+    height: 21em;
+    width: 7.35em;
+    background: linear-gradient(to right, #8d3931 0%, #F36154 20%, #F36154 80%, #8d3931 100%);
+    border: 0.1em solid black;
+    border-radius: 0em 4em 4em 0em 
+}
+
+.divBotonMenos{
+    width: 7.35em;
+    height: 3em;
+    border: 0.1em solid black;
+}
+
+.divBotonMas{
+    width: 7.35em;
+    height: 3em;
+    border: 0.1em solid black;
+}
 
