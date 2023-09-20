@@ -195,9 +195,9 @@ body {
     margin-bottom: 0.5em;
 }
 
-.divJostick{
+.divJostick, .divCruceta{
     width: 7.35em;
-    height: 7.3em;
+    height: 5em;
     border: 0.1em solid black;
     display: flex;
     justify-content: center;
@@ -265,19 +265,10 @@ body {
     height: 0.5em;
 }
 
-.divCruceta{
-    width: 7.35em;
-    height: 7.3em;
-    border: 0.1em solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .divContieneCirculos{
     width: 5em;
     height: 5em;
-    border: 0.1em solid black;
+    /* border: 0.1em solid black; */
     transform: rotate(45deg);
 }
 
@@ -299,8 +290,8 @@ body {
 }
 
 .botonCruceta{
-    width: 2em;
-    height: 2em;
+    width: 1.7em;
+    height: 1.7em;
     border-radius: 50%;
     border: 0.1em solid black;
     background: linear-gradient(to right, #303235 0%, #5d6167 30%, #5d6167 70%, #303235  100%);
