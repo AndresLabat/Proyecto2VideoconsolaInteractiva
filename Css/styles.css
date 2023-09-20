@@ -25,9 +25,41 @@ body {
     filter: blur(5px);
 }
 
+.divTituloNSW{
+    width: 50em;
+    height: 6em;
+    /* border: 0.1em solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tituloNSW{
+    width: 15em;
+    height: 5.8em;
+    position: absolute;
+    /* border: 0.1em solid black; */
+}
+
+.tituloNSW img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .nintendoSwitch{
     width: 50em;
-    height: 21.06em;
-    background-color: #474149;
+    height: 30em; /* 21.06em son de la consola */
+    /* background-color: white; */
     position: absolute;
 }
+
+.consola{
+    width: 50em;
+    height: 21.06em; /* 21.06em son de la consola */
+    background-color: #474149; 
+    margin-top: 2em;
+}
+
+
