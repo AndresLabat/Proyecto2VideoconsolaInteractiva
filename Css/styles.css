@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(5px);
+    /* filter: blur(5px); */
 }
 
 .divTituloNSW{
@@ -45,21 +45,78 @@ body {
 .tituloNSW img{
     width: 100%;
     height: 100%;
+    border-radius: 1em;
     object-fit: cover;
 }
 
 .nintendoSwitch{
     width: 50em;
-    height: 30em; /* 21.06em son de la consola */
-    /* background-color: white; */
+    height: 29.06em;
     position: absolute;
 }
 
 .consola{
     width: 50em;
-    height: 21.06em; /* 21.06em son de la consola */
-    background-color: #474149; 
+    height: 21em;
+    /* background-color: #474149;  */
     margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.joyconIzquierdo{
+    height: 21em;
+    width: 7.35em;
+    background-color: #55BEF4;
+    background: linear-gradient(to right, #2b627d  0%, #55BEF4 20%, #55BEF4 80%, #2b627d  100%);
+    border-radius: 4em 0em 0em 4em
+}
+
+.joyconDerecho{
+    height: 21em;
+    width: 7.35em;
+    background: linear-gradient(to right, #8d3931 0%, #F36154 20%, #F36154 80%, #8d3931 100%);
+    border: 0.1em solid black;
+    border-radius: 0em 4em 4em 0em
+    
+}
+
+.cuerpoPantalla{
+    height: 20em;
+    width: 35.20em;
+    background-color: #303235; 
+    border: 0.1em solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bordePantalla{
+    height: 18em;
+    width: 33em;
+    background-color: #010101; 
+    border: 0.1em solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+
+.pantalla{
+    height: 13.2em;
+    width: 28.2em;
+    background: linear-gradient(to bottom left, 
+    black,
+    purple,
+    blue,
+    green,
+    yellow,
+    orange,
+    red,
+    white);
+    filter: grayscale(100%);
+}
+
 
 
