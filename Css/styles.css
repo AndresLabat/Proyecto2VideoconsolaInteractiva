@@ -181,12 +181,46 @@ body {
 .divBotonMenos{
     width: 7.35em;
     height: 3em;
-    border: 0.1em solid black;
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
 .divBotonMas{
     width: 7.35em;
-    height: 3em;
-    border: 0.1em solid black;
+    height: 3.5em;
+    display: flex;
+    align-items: end;
+}
+
+.botonMenos{
+    width: 1.5em;
+    height: 0.5em;
+    background-color: #303235; 
+    margin-right: 0.8em;
+}
+
+.botonMas{
+    width: 1.5em;
+    height: 1.5em;
+    /* background-color: #303235;  */
+    margin-left: 0.8em;
+}
+
+.row1, .row2, .row3{
+    display: flex;
+    width: 1.5em;
+    height: 0.5em;
+}
+
+.row1col1, .row1col3, .row3col1, .row3col3{
+    width: 0.5em;
+    height: 0.5em;
+}
+
+.row1col2, .row2col1, .row2col2, .row2col3, .row3col2{
+    background-color: #303235;
+    width: 0.5em;
+    height: 0.5em;
 }
 
