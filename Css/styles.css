@@ -11,6 +11,8 @@ body {
     position: relative;
 }
 
+/* VIDEO DE FONDO */
+
 .contenedorVideo {
     width: 100vw;
     height: 100vh;
@@ -24,6 +26,8 @@ body {
     object-fit: cover;
     /* filter: blur(5px); */
 }
+
+/* TITULO CONSOLA */
 
 .textoPresentacion{
     color: white;
@@ -56,6 +60,8 @@ body {
     object-fit: cover;
 }
 
+/* CONTENEDOR DE LA CONSOLA COMPLETA */
+
 .nintendoSwitch{
     width: 50em;
     height: 29.06em;
@@ -65,12 +71,13 @@ body {
 .consola{
     width: 50em;
     height: 21em;
-    /* background-color: #474149;  */
     margin-top: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* CUERPO DE LA CONSOLA SIN MANDOS */
 
 .consolaConBotones{
     width: 35.20em;
@@ -162,6 +169,8 @@ body {
     filter: grayscale(100%);
 }
 
+/* MANDO IZQUIERDO */
+
 .joyconIzquierdo{
     height: 21em;
     width: 7.35em;
@@ -169,6 +178,54 @@ body {
     background: linear-gradient(to right, #2b627d  0%, #55BEF4 20%, #55BEF4 80%, #2b627d  100%);
     border-radius: 4em 0em 0em 4em
 }
+
+.divBotonMenos{
+    width: 7.35em;
+    height: 3.5em;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.botonMenos{
+    width: 1.5em;
+    height: 0.5em;
+    background-color: #303235; 
+    margin-right: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.divJostick{
+    width: 7.35em;
+    height: 7.3em;
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jostick{
+    width: 3em;
+    height: 3em;
+    border: 0.1em solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #303235 0%, #5d6167 30%, #5d6167 70%, #303235  100%);
+    
+}
+
+.circuloInteriorJostick{
+    width: 2.2em;
+    height: 2.2em;
+    background: linear-gradient(to bottom right, #303235 0%, #5d6167 30%, #5d6167 70%, #303235  100%);
+    border: 0.1em solid black;
+    border-radius: 50%;
+    
+}
+
+/* MANDO DERECHO */
 
 .joyconDerecho{
     height: 21em;
@@ -178,14 +235,6 @@ body {
     border-radius: 0em 4em 4em 0em 
 }
 
-.divBotonMenos{
-    width: 7.35em;
-    height: 3em;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-
 .divBotonMas{
     width: 7.35em;
     height: 3.5em;
@@ -193,17 +242,9 @@ body {
     align-items: end;
 }
 
-.botonMenos{
-    width: 1.5em;
-    height: 0.5em;
-    background-color: #303235; 
-    margin-right: 0.8em;
-}
-
 .botonMas{
     width: 1.5em;
     height: 1.5em;
-    /* background-color: #303235;  */
     margin-left: 0.8em;
 }
 
@@ -222,5 +263,46 @@ body {
     background-color: #303235;
     width: 0.5em;
     height: 0.5em;
+}
+
+.divCruceta{
+    width: 7.35em;
+    height: 7.3em;
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divContieneCirculos{
+    width: 5em;
+    height: 5em;
+    border: 0.1em solid black;
+    transform: rotate(45deg);
+}
+
+.divContieneCirculosRow{
+    width: 5em;
+    height: 2.4em;
+    /* border: 0.1em solid black; */
+    display: flex;
+}
+
+.divContieneCirculosRow1Col1, .divContieneCirculosRow1Col2, 
+.divContieneCirculosRow12Col1, .divContieneCirculosRow2Col2{
+    width: 2.4em;
+    height: 2.4em;
+    /* border: 0.1em solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonCruceta{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 0.1em solid black;
+    background: linear-gradient(to right, #303235 0%, #5d6167 30%, #5d6167 70%, #303235  100%);
 }
 
