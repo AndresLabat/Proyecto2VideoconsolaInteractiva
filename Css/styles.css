@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.contenedorVideo {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedorVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
