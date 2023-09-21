@@ -81,12 +81,12 @@ body {
 
 .consolaConBotones{
     width: 35.20em;
-    height: 21em;
+    height: 23em;
 }
 
 .botonesPantalla{
-    height: 1em;
     width: 35.20em;
+    height: 1em;
     display: flex;
 }
 
@@ -134,18 +134,18 @@ body {
 }
 
 .cuerpoPantalla{
-    height: 20em;
+    height: 20.9em;
     width: 35.20em;
     background-color: #303235; 
     border: 0.1em solid black;
-    border-radius: 1em 1em 0em 0em;
+    border-radius: 1em 1em 0.5em 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .bordePantalla{
-    height: 18em;
+    height: 19em;
     width: 33em;
     background-color: #010101; 
     border: 0.1em solid black;
@@ -156,7 +156,7 @@ body {
 }
 
 .pantalla{
-    height: 13.2em;
+    height: 14.6em;
     width: 28.2em;
     background: linear-gradient(to bottom left, 
     black,
@@ -177,7 +177,7 @@ body {
     width: 7.35em;
     background-color: #55BEF4;
     background: linear-gradient(to right, #2b627d  0%, #55BEF4 20%, #55BEF4 80%, #2b627d  100%);
-    border-radius: 4em 0em 0em 4em
+    border-radius: 4em 0.5em 0.5em 4em
 }
 
 .divBotonMenos{
@@ -213,13 +213,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right, #303235 0%, #5d6167 30%, #5d6167 70%, #303235  100%);
-}
+    background: radial-gradient(circle at 100% 100%, #212325 0%, #5d6167 10%, #5d6167 60%, #212325 100%);}
 
 .circuloInteriorJostick{
     width: 2.2em;
     height: 2.2em;
-    background: linear-gradient(to bottom right, #303235 0%, #5d6167 30%, #5d6167 70%, #303235  100%);
+    background: radial-gradient(circle at 100% 100%, #212325 0%, #5d6167 10%, #5d6167 60%, #212325 100%);
     border: 0.1em solid black;
     border-radius: 50%;
 }
@@ -260,7 +259,7 @@ body {
     width: 7.35em;
     background: linear-gradient(to right, #8d3931 0%, #F36154 20%, #F36154 80%, #8d3931 100%);
     border: 0.1em solid black;
-    border-radius: 0em 4em 4em 0em 
+    border-radius: 0.5em 4em 4em 0.5em 
 }
 
 .divBotonMas{
