@@ -251,6 +251,16 @@ body {
     border-radius: 50%;
 }
 
+.divImgJostick img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.divImgJostick{
+    width: 3.6em;
+    height: 3.6em;
+}
 
 /* MANDO DERECHO */
 
@@ -373,13 +383,26 @@ body {
 }
 
 .botonHome{
-    width: 1.2em;
-    height: 1.2em;
-    border-radius: 50%;
-    border: 0.1em solid black;
-    background: linear-gradient(to bottom right, #303235 0%, #5d6167 45%, #5d6167 55%, #303235  100%);
     margin-left: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.divBotonHome{
+    width: 1.8em;
+    height: 1.8em;
+
+}
+
+.divBotonHome img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.textoCruceta{
+    color: white;
+    transform: rotate(-45deg);
 }
