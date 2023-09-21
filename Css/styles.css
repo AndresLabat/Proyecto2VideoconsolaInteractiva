@@ -11,6 +11,7 @@ body {
     position: relative;
 }
 
+
 /* VIDEO DE FONDO */
 
 .contenedorVideo {
@@ -26,6 +27,7 @@ body {
     object-fit: cover;
     /* filter: blur(5px); */
 }
+
 
 /* TITULO CONSOLA */
 
@@ -60,6 +62,7 @@ body {
     object-fit: cover;
 }
 
+
 /* CONTENEDOR DE LA CONSOLA COMPLETA */
 
 .nintendoSwitch{
@@ -72,7 +75,7 @@ body {
 
 .consola{
     width: 50em;
-    height: 21em;
+    height: 20em;
     margin-top: 2em;
     display: flex;
     justify-content: center;
@@ -80,10 +83,11 @@ body {
     /* background-color: red; */
 }
 
+
 /* CONTENEDOR DEL DOC */
 
 .divDoc{
-    height: 23em;
+    height: 20em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,11 +95,42 @@ body {
 
 .doc{
     width: 35.20em;
-    height: 23em;
+    height: 20em;
     border: 0.1em solid black;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
     border-radius: 1em;
+    display: flex;
 }
+
+.divInternoDocLateral{
+    width: 5.60em;
+    height: 21em;
+    /* border: 0.1em solid black; */
+}
+
+.divInternoDocCentro{
+    width: 24em;
+    height: 20em;
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divImgDoc{
+    width: 12em;
+}
+
+.divImgDoc img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*----------------------------------------------------------------------*/
+
+
+
 
 .divPatasDoc{
     width: 50em;
@@ -154,11 +189,12 @@ body {
     margin-left: 3em;
 }
 
+
 /* CUERPO DE LA CONSOLA SIN MANDOS */
 
 .consolaConBotones{
     width: 35.20em;
-    height: 23em;
+    height: 21em;
 }
 
 .botonesPantalla{
@@ -211,8 +247,8 @@ body {
 }
 
 .cuerpoPantalla{
-    height: 20.9em;
     width: 35.20em;
+    height: 19.9em;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
     border: 0.1em solid black;
     border-radius: 1em 1em 0.5em 0.5em;
@@ -222,8 +258,8 @@ body {
 }
 
 .bordePantalla{
-    height: 19em;
     width: 33em;
+    height: 18em;
     background-color: #010101; 
     border: 0.1em solid black;
     display: flex;
@@ -233,8 +269,8 @@ body {
 }
 
 .pantalla{
-    height: 14.6em;
     width: 28.2em;
+    height: 13.6em;
     background: linear-gradient(to bottom left, 
     black,
     purple,
@@ -247,11 +283,13 @@ body {
     filter: grayscale(100%);
 }
 
+
 /* MANDO IZQUIERDO */
 
 .joyconIzquierdo{
-    height: 21em;
     width: 7.35em;
+    height: 20em;
+    margin-top: 1em;
     background-color: #55BEF4;
     background: linear-gradient(to right, #2b627d  0%, #55BEF4 20%, #55BEF4 80%, #2b627d  100%);
     border-radius: 4em 0.5em 0.5em 4em
@@ -355,8 +393,9 @@ body {
 /* MANDO DERECHO */
 
 .joyconDerecho{
-    height: 21em;
     width: 7.35em;
+    height: 20em;
+    margin-top: 1em;
     background: linear-gradient(to right, #8d3931 0%, #F36154 20%, #F36154 80%, #8d3931 100%);
     border: 0.1em solid black;
     border-radius: 0.5em 4em 4em 0.5em 
