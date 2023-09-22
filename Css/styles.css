@@ -25,23 +25,23 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* filter: blur(5px); */
 }
 
 
 /* TITULO CONSOLA */
 
 .textoPresentacion{
-    color: white;
+    color: black;
+    /* color: white; */
     text-align: center;
     margin-bottom: 0.7em;
     font-size: large;
 }
 
 .divTituloNSW{
-    width: 50em;
+    width: 103em;
     height: 6em;
-    /* border: 0.1em solid black; */
+    border: 0.1em solid black;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -52,7 +52,7 @@ body {
     width: 15em;
     height: 5.8em;
     position: absolute;
-    /* border: 0.1em solid black; */
+    border: 0.1em solid black;
 }
 
 .tituloNSW img{
@@ -66,31 +66,54 @@ body {
 /* CONTENEDOR DE LA CONSOLA COMPLETA */
 
 .nintendoSwitch{
-    width: 50em;
-    height: 60em;
+    width: 103em;
+    height: 36em;
     position: absolute;
-    /* background-color: white; */
+    background-color: white;
 
 }
 
 .consola{
     width: 50em;
-    height: 20em;
+    height: 22em;
+    margin-right: 3em;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.divConsolaDoc{
+    width: 103em;
+    height: 26em;
+    border: 0.1em solid black;
     margin-top: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
 }
 
 
 /* CONTENEDOR DEL DOC */
 
 .divDoc{
-    height: 20em;
+    width: 50em;
+    height: 22em;
+    margin-top: 4em;
+    /* display: flex;
+    justify-content: center;
+    align-items:center; */
+    background-color: red;
+}
+
+.divDocInterno{
+    width: 50em;
+    height: 21em;
+    border: 0.1em solid black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 
 .doc{
@@ -100,12 +123,13 @@ body {
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
     border-radius: 1em;
     display: flex;
+    margin-top: 1em;
 }
 
 .divInternoDocLateral{
     width: 5.60em;
-    height: 21em;
-    /* border: 0.1em solid black; */
+    height: 20em;
+    border: 0.1em solid black;
 }
 
 .divInternoDocCentro{
@@ -151,7 +175,7 @@ body {
 .divInternoPatasDoc{
     width: 11.7em;
     height: 0.5em;
-    /* border: 0.1em solid black; */
+    border: 0.1em solid black;
     display: flex;
     justify-content: center;
   
