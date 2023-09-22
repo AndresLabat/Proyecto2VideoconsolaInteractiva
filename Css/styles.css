@@ -75,7 +75,7 @@ body {
 .consola{
     width: 35em;
     height: 15.4em;
-    margin-right: 2.1em;
+    /* margin-right: 2.1em; */
     margin-bottom: 2.8em;
     display: flex;
     justify-content: center;
@@ -97,14 +97,24 @@ body {
 /* CONTENEDOR DEL DOC */
 
 .divDoc{
-    width: 35em;
+    width: 24.64em;
     height: 15.4em;
     margin-top: 5.25em;
+    position: absolute;
     /* background-color: red; */
+    transition: 2s;
+}
+
+.divDoc:hover{
+    width: 24.64em;
+    height: 15.4em;
+    margin-top: 5.25em;
+    position: absolute;
+    margin-left: 70em;
 }
 
 .divDocInterno{
-    width: 35em;
+    width: 24.64em;
     height: 14.7em;
     /* border: 0.1em solid black; */
     display: flex;
@@ -120,18 +130,38 @@ body {
     border-radius: 0.7em;
     display: flex;
     margin-top: 0.7em;
+    transition: 2s;
+    position: absolute;
 }
+
 
 .divInternoDocLateral{
     width: 3.92em;
     height: 14em;
+    /* border: 0.1em solid black; */
+    display: flex;
+    align-items: end;
+}
+
+.divInternoDocLateralInferior{
+    width: 3.92em;
+    height: 4em;
+    /* border: 0.1em solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.luzEncendido{
+    width: 1em;
+    height: 0.4em;
     border: 0.1em solid black;
+    background-color: #141618;
 }
 
 .divInternoDocCentro{
     width: 16.8em;
     height: 14em;
-    border: 0.1em solid black;
+    /* border: 0.1em solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,13 +177,8 @@ body {
     object-fit: cover;
 }
 
-/*----------------------------------------------------------------------*/
-
-
-
-
 .divPatasDoc{
-    width: 35em;
+    width: 24.64em;
     display: flex;
     justify-content: center;
 }
@@ -162,7 +187,6 @@ body {
     width: 24.64em;
     height: 0.35em;
     /* border: 0.1em solid black; */
-    /* background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%); */
     border-radius: 0.7em;
     display: flex;
     justify-content: center;
@@ -391,15 +415,15 @@ body {
     border-radius: 50%;
 }
 
+.divImgJostick{
+    width: 2.52em;
+    height: 2.52em;
+}
+
 .divImgJostick img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.divImgJostick{
-    width: 2.52em;
-    height: 2.52em;
 }
 
 .DivImgCharmander{
