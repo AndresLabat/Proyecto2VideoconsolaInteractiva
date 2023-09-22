@@ -34,13 +34,13 @@ body {
     /* color: black; */
     color: white;
     text-align: center;
-    margin-bottom: 0.7em;
+    margin-bottom: 0.5em;
     font-size: large;
 }
 
 .divTituloNSW{
-    width: 103em;
-    height: 6em;
+    width: 72.1em;
+    height: 4.2em;
     /* border: 0.1em solid black; */
     display: flex;
     justify-content: center;
@@ -49,8 +49,8 @@ body {
 }
 
 .tituloNSW{
-    width: 15em;
-    height: 5.8em;
+    width: 10.5em;
+    height: 4.06em;
     /* position: absolute; */
     /* border: 0.1em solid black; */
 }
@@ -58,7 +58,7 @@ body {
 .tituloNSW img{
     width: 100%;
     height: 100%;
-    border-radius: 1em;
+    border-radius: 0.7em;
     object-fit: cover;
 }
 
@@ -66,17 +66,17 @@ body {
 /* CONTENEDOR DE LA CONSOLA COMPLETA */
 
 .nintendoSwitch{
-    width: 103em;
-    height: 38em;
+    width: 72.1em;
+    height: 26.6em;
     position: absolute;
     /* background-color: white; */
 }
 
 .consola{
-    width: 50em;
-    height: 22em;
-    margin-right: 3em;
-    margin-bottom: 4em;
+    width: 35em;
+    height: 15.4em;
+    margin-right: 2.1em;
+    margin-bottom: 2.8em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,10 +84,10 @@ body {
 }
 
 .divConsolaDoc{
-    width: 103em;
-    height: 26em;
+    width: 72.1em;
+    height: 18.2em;
     /* border: 0.1em solid black; */
-    margin-top: 2em;
+    margin-top: 1.4em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,15 +97,15 @@ body {
 /* CONTENEDOR DEL DOC */
 
 .divDoc{
-    width: 50em;
-    height: 22em;
-    margin-top: 7.5em;
+    width: 35em;
+    height: 15.4em;
+    margin-top: 5.25em;
     /* background-color: red; */
 }
 
 .divDocInterno{
-    width: 50em;
-    height: 21em;
+    width: 35em;
+    height: 14.7em;
     /* border: 0.1em solid black; */
     display: flex;
     justify-content: center;
@@ -113,24 +113,24 @@ body {
 }
 
 .doc{
-    width: 35.20em;
-    height: 20em;
+    width: 24.64em;
+    height: 14em;
     border: 0.1em solid black;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
-    border-radius: 1em;
+    border-radius: 0.7em;
     display: flex;
-    margin-top: 1em;
+    margin-top: 0.7em;
 }
 
 .divInternoDocLateral{
-    width: 5.60em;
-    height: 20em;
+    width: 3.92em;
+    height: 14em;
     border: 0.1em solid black;
 }
 
 .divInternoDocCentro{
-    width: 24em;
-    height: 20em;
+    width: 16.8em;
+    height: 14em;
     border: 0.1em solid black;
     display: flex;
     justify-content: center;
@@ -138,7 +138,7 @@ body {
 }
 
 .divImgDoc{
-    width: 12em;
+    width: 8.4em;
 }
 
 .divImgDoc img{
@@ -153,24 +153,24 @@ body {
 
 
 .divPatasDoc{
-    width: 50em;
+    width: 35em;
     display: flex;
     justify-content: center;
 }
 
 .patasDoc{
-    width: 35.20em;
-    height: 0.5em;
+    width: 24.64em;
+    height: 0.35em;
     /* border: 0.1em solid black; */
     /* background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%); */
-    border-radius: 1em;
+    border-radius: 0.7em;
     display: flex;
     justify-content: center;
 }
 
 .divInternoPatasDoc{
-    width: 11.7em;
-    height: 0.5em;
+    width: 8.19em;
+    height: 0.35em;
     /* border: 0.1em solid black; */
     display: flex;
     justify-content: center;
@@ -178,65 +178,66 @@ body {
 }
 
 .pataDocDelanteraIzquierda{
-    width: 2em;
-    height: 0.3em;
+    width: 1.4em;
+    height: 0.21em;
     border: 0.1em solid black;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
-    margin-right: 2em;
+    margin-right: 1.4em;
 }
 
 .pataDocTraseraIzquierda{
-    width: 2em;
-    height: 0.15em;
+    width: 1.4em;
+    height: 0.1em;
     border: 0.1em solid black;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
-    margin-right: 3em;
+    margin-right: 2.1em;
 }
 
 .pataDocDelanteraDerecha{
-    width: 2em;
-    height: 0.3em;
+    width: 1.4em;
+    height: 0.21em;
     border: 0.1em solid black;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
-    margin-left: 2em;
+    margin-left: 1.4em;
 }
 
 .pataDocTraseraDerecha{
-    width: 2em;
-    height: 0.15em;
+    width: 1.4em;
+    height: 0.1em;
     border: 0.1em solid black;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
-    margin-left: 3em;
+    margin-left: 2.1em;
 }
 
 
 /* CUERPO DE LA CONSOLA SIN MANDOS */
 
 .consolaConBotones{
-    width: 35.20em;
-    height: 21em;
+    width: 24.64em;
+    height: 14.7em;
 }
 
 .botonesPantalla{
-    width: 35.20em;
-    height: 1em;
+    width: 24.64em;
+    height: 0.7em;
     display: flex;
 }
 
 .divBotonPantalla{
-    width: 11.70em;
-    height: 0.9em;
+    width: 8.19em;
+    height: 0.63em;
     display: flex;
     justify-content:center;
 }
 
 #botonEncendido{
-    width: 3em;
-    height: 0.9em;
+    width: 2.1em;
+    height: 0.85em;
     border: 0.1em solid black;
-    margin-left: 2em;
+    margin-left: 1.4em;
     background-color: #303235; 
     color: white;
+    font-size: small;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,11 +245,12 @@ body {
 
 #volumenDown{
     width: 2em;
-    height: 0.9em;
+    height: 0.85em;
     border: 0.1em solid black;
-    margin-left: 2em;
+    margin-left: 1.4em;
     background-color: #303235; 
     color: white;
+    font-size: small;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,41 +258,42 @@ body {
 
 #volumenUp{
     width: 2em;
-    height: 0.9em;
+    height: 0.85em;
     border: 0.1em solid black;
-    margin-left: 0.8em;
+    margin-left: 0.56em;
     background-color: #303235; 
     color: white;
+    font-size: small;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .cuerpoPantalla{
-    width: 35.20em;
-    height: 19.9em;
+    width: 24.6em;
+    height: 13.93em;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
     border: 0.1em solid black;
-    border-radius: 1em 1em 0.5em 0.5em;
+    border-radius: 0.7em 0.7em 0.35em 0.35em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .bordePantalla{
-    width: 33em;
-    height: 18em;
+    width: 23.1em;
+    height: 12.6em;
     background-color: #010101; 
     border: 0.1em solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.5em;
+    border-radius: 0.35em;
 }
 
 .pantalla{
-    width: 28.2em;
-    height: 13.6em;
+    width: 19.74em;
+    height: 9.52em;
     background: linear-gradient(to bottom left, 
     black,
     purple,
@@ -307,33 +310,33 @@ body {
 /* MANDO IZQUIERDO */
 
 .joyconIzquierdo{
-    width: 7.35em;
-    height: 20em;
-    margin-top: 1em;
+    width: 5.145em;
+    height: 14em;
+    margin-top: 0.7em;
     background-color: #55BEF4;
     background: linear-gradient(to right, #2b627d  0%, #55BEF4 20%, #55BEF4 80%, #2b627d  100%);
-    border-radius: 4em 0.5em 0.5em 4em
+    border-radius: 2.8em 0.35em 0.35em 2.8em
 }
 
 .divBotonMenos{
-    width: 7.35em;
-    height: 3.5em;
+    width: 5.145em;
+    height: 2.45em;
     display: flex;
     justify-content: end;
     align-items: end;
 }
 
 .botonMenos{
-    width: 1.5em;
-    height: 0.5em;
+    width: 1.05em;
+    height: 0.35em;
     background-color: #303235; 
-    margin-right: 0.8em;
-    margin-bottom: 0.5em;
+    margin-right: 0.56em;
+    margin-bottom: 0.35em;
 }
 
 .divJostick, .divCruceta{
-    width: 7.35em;
-    height: 5.6em;
+    width: 5.145em;
+    height: 3.92em;
     /* border: 0.1em solid black; */
     display: flex;
     justify-content: center;
@@ -341,8 +344,8 @@ body {
 }
 
 .jostick{
-    width: 3em;
-    height: 3em;
+    width: 2.1em;
+    height: 2.1em;
     border: 0.1em solid black;
     border-radius: 50%;
     display: flex;
@@ -351,38 +354,38 @@ body {
     background: radial-gradient(circle at 100% 100%, #212325 0%, #5d6167 10%, #5d6167 60%, #212325 100%);}
 
 .circuloInteriorJostick{
-    width: 2.2em;
-    height: 2.2em;
+    width: 1.54em;
+    height: 1.54em;
     background: radial-gradient(circle at 100% 100%, #212325 0%, #5d6167 10%, #5d6167 60%, #212325 100%);
     border: 0.1em solid black;
     border-radius: 50%;
 }
 
 .divBotonInferiorIzquierdo{
-    width: 7.35em;
-    height: 3em;
+    width: 5.145em;
+    height: 2.1em;
     /* border: 0.1em solid black; */
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 0.35em;
 }
 
 .botonCapturaPantalla{
-    width: 1.2em;
-    height: 1.2em;
+    width: 0.84em;
+    height: 0.84em;
     border: 0.1em solid black;
     background-color: #303235; 
-    margin-right: 1em;
+    margin-right: 0.7em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.7em;
 }
 
 .botonCapturaPantallaCirculoInterior{
-    width: 0.9em;
-    height: 0.9em;
+    width: 0.63em;
+    height: 0.63em;
     border: 0.1em solid black;
     background: linear-gradient(to bottom right, #303235 0%, #5d6167 45%, #5d6167 55%, #303235  100%);
     border-radius: 50%;
@@ -395,12 +398,12 @@ body {
 }
 
 .divImgJostick{
-    width: 3.6em;
-    height: 3.6em;
+    width: 2.52em;
+    height: 2.52em;
 }
 
 .DivImgCharmander{
-    width: 4.7em;
+    width: 3.29em;
 }
 
 .DivImgCharmander img{
@@ -414,61 +417,61 @@ body {
 
 .joyconDerecho{
     width: 7.35em;
-    height: 20em;
+    height: 14em;
     margin-top: 1em;
     background: linear-gradient(to right, #8d3931 0%, #F36154 20%, #F36154 80%, #8d3931 100%);
     border: 0.1em solid black;
-    border-radius: 0.5em 4em 4em 0.5em 
+    border-radius: 0.35em 2.8em 2.8em 0.35em 
 }
 
 .divBotonMas{
-    width: 7.35em;
-    height: 3.5em;
+    width: 5.145em;
+    height: 2.45em;
     display: flex;
     align-items: end;
 }
 
 .botonMas{
-    width: 1.5em;
-    height: 1.5em;
-    margin-left: 0.8em;
+    width: 1.05em;
+    height: 1.05em;
+    margin-left: 0.56em;
 }
 
 .row1, .row2, .row3{
     display: flex;
-    width: 1.5em;
-    height: 0.5em;
+    width: 1.05em;
+    height: 0.35em;
 }
 
 .row1col1, .row1col3, .row3col1, .row3col3{
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.35em;
+    height: 0.35em;
 }
 
 .row1col2, .row2col1, .row2col2, .row2col3, .row3col2{
     background-color: #303235;
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.35em;
+    height: 0.35em;
 }
 
 .divContieneCirculos{
-    width: 5em;
-    height: 5em;
+    width: 3.5em;
+    height: 3.5em;
     /* border: 0.1em solid black; */
     transform: rotate(45deg);
 }
 
 .divContieneCirculosRow{
-    width: 5em;
-    height: 2.4em;
+    width: 3.5em;
+    height: 1.68em;
     /* border: 0.1em solid black; */
     display: flex;
 }
 
 .divContieneCirculosRow1Col1, .divContieneCirculosRow1Col2, 
 .divContieneCirculosRow12Col1, .divContieneCirculosRow2Col2{
-    width: 2.4em;
-    height: 2.4em;
+    width: 1.68em;
+    height: 1.68em;
     /* border: 0.1em solid black; */
     display: flex;
     align-items: center;
@@ -476,8 +479,8 @@ body {
 }
 
 .botonCruceta{
-    width: 1.7em;
-    height: 1.7em;
+    width: 1.19em;
+    height: 1.19em;
     border-radius: 50%;
     border: 0.1em solid black;
     background: linear-gradient(to right, #303235 0%, #5d6167 30%, #5d6167 70%, #303235  100%);
@@ -489,60 +492,60 @@ body {
 .trianguloSuperior{
     width: 0;
     height: 0;
-    border-left: 0.4em solid transparent;
-    border-right: 0.4em solid transparent;
-    border-bottom: 0.69em solid #222325;
+    border-left: 0.28em solid transparent;
+    border-right: 0.28em solid transparent;
+    border-bottom: 0.483em solid #222325;
     transform: rotate(-45deg);
 }
 
 .trianguloDerecho{
     width: 0;
     height: 0;
-    border-left: 0.4em solid transparent;
-    border-right: 0.4em solid transparent;
-    border-bottom: 0.69em solid #222325;
+    border-left: 0.28em solid transparent;
+    border-right: 0.28em solid transparent;
+    border-bottom: 0.483em solid #222325;
     transform: rotate(45deg);
 }
 
 .trianguloInferior{
     width: 0;
     height: 0;
-    border-left: 0.4em solid transparent;
-    border-right: 0.4em solid transparent;
-    border-bottom: 0.69em solid #222325;
+    border-left: 0.28em solid transparent;
+    border-right: 0.28em solid transparent;
+    border-bottom: 0.483em solid #222325;
     transform: rotate(135deg);
 }
 
 .trianguloIzquierdo{
     width: 0;
     height: 0;
-    border-left: 0.4em solid transparent;
-    border-right: 0.4em solid transparent;
-    border-bottom: 0.69em solid #222325;
+    border-left: 0.28em solid transparent;
+    border-right: 0.28em solid transparent;
+    border-bottom: 0.483em solid #222325;
     transform: rotate(225deg);
 }
 
 .divBotonInferiorDerecho{
-    width: 7.35em;
-    height: 3em;
+    width: 5.145em;
+    height: 2.1em;
     /* border: 0.1em solid black; */
     display: flex;
     justify-content:baseline;
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 0.35em;
 }
 
 .botonHome{
-    margin-left: 1em;
-    margin-bottom: 1em;
+    margin-left: 0.7em;
+    margin-bottom: 0.7em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .divBotonHome{
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.05em;
+    height: 1.05em;
 }
 
 .divBotonHome img{
@@ -552,7 +555,7 @@ body {
 }
 
 .DivImgEevee{
-    width: 4.7em;
+    width: 3.29em;
 }
 
 .DivImgEevee img{
