@@ -345,6 +345,12 @@ body {
     filter: grayscale(100%);
 }
 
+.pantalla img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* MANDO IZQUIERDO */
 
@@ -592,6 +598,7 @@ body {
 .divBotonHome{
     width: 1.05em;
     height: 1.05em;
+    cursor: pointer;
 }
 
 .divBotonHome img{
