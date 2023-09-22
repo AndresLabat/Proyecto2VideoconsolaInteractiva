@@ -1,30 +1,5 @@
 
-const baseDeCarga = document.querySelector(".divDoc");
-const consola = document.querySelector(".consola");
-
-let margenesAplicados = false;
-
-baseDeCarga.addEventListener("click", () => {
-    if (margenesAplicados == false) {
-        consola.style.marginTop = "";
-        setTimeout(() => {
-            consola.style.marginRight = "";
-        }, 2000);
-        setTimeout(() => {
-            baseDeCarga.style.marginLeft = "";
-        }, 2000);
-        margenesAplicados = true;
-    } else {
-        baseDeCarga.style.marginLeft = "35em";
-        consola.style.marginRight = "35em";
-        setTimeout(() => {
-            consola.style.marginTop = "8em";
-        }, 2000);
-        margenesAplicados = false;
-    }
-});
-
-/*-------------------------------------------------------------------------------*/
+// JOYCON DERECHO:
 
 const joyconDerecho = document.querySelector(".joyconDerecho");
 
@@ -32,14 +7,21 @@ let desplazamientoJoyconDerecho = false;
 
 joyconDerecho.addEventListener("click", () => {
     if (desplazamientoJoyconDerecho == false) {
-        joyconDerecho.style.marginBottom = "";
         joyconDerecho.style.marginRight = "";
+        setTimeout(() => {
+            joyconDerecho.style.marginBottom = "";
+        }, 2000);
         desplazamientoJoyconDerecho = true;
     } else {
         joyconDerecho.style.marginBottom = "34em";
+        setTimeout(() => {
+            joyconDerecho.style.marginRight = "49em";
+        }, 2000);
         desplazamientoJoyconDerecho = false;
     }
 });
+
+// JOYCON IZQUIERDO:
 
 
 const joyconIzquierdo = document.querySelector(".joyconIzquierdo");
@@ -54,8 +36,61 @@ joyconIzquierdo.addEventListener("click", () => {
     } else {
         joyconIzquierdo.style.marginBottom = "34em";
         desplazamientoJoyconIzquierdo = false;
-    }
-});
+    }    
+});    
+
+// PANTALLA Y DOC:
+
+const baseDeCarga = document.querySelector(".divDoc");
+const consola = document.querySelector(".consola");
+
+let margenesAplicados = false;
+
+baseDeCarga.addEventListener("click", () => {
+    if (margenesAplicados == false) {
+        consola.style.marginTop = "";
+        setTimeout(() => {
+            consola.style.marginRight = "";
+        }, 2000);    
+        setTimeout(() => {
+            baseDeCarga.style.marginLeft = "";
+        }, 2000); 
+        joyconDerecho.style.marginRight = "";
+        setTimeout(() => {
+            joyconDerecho.style.marginBottom = "";
+        }, 2000);
+        desplazamientoJoyconDerecho = true;
+
+        joyconIzquierdo.style.marginBottom = "";
+        joyconIzquierdo.style.marginRight = "";
+
+        desplazamientoJoyconIzquierdo = true;
+        
+        margenesAplicados = true;
+
+    } else {
+        baseDeCarga.style.marginLeft = "35em";
+        consola.style.marginRight = "35em";
+        setTimeout(() => {
+            consola.style.marginTop = "8em";
+        }, 2000);    
+
+        joyconDerecho.style.marginBottom = "34em";
+        setTimeout(() => {
+            joyconDerecho.style.marginRight = "49em";
+        }, 2000);
+
+        desplazamientoJoyconDerecho = false;
+
+        joyconIzquierdo.style.marginBottom = "34em";
+        
+        desplazamientoJoyconIzquierdo = false;
+
+        margenesAplicados = false;
+
+    }    
+});    
+
 
 
 /*-------------------------------------------------------------------------------*/
