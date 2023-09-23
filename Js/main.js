@@ -245,6 +245,30 @@ botonY.addEventListener("click", () => {
     }
 });
 
+// BOTON X (BRILLO DE LA PANTALLA):
+
+const botonX = document.querySelector("#botonX");
+let posicionBrillo = 0;
+
+botonX.addEventListener("click", () => {
+    event.stopPropagation();
+    if (botonOnEncendido == true) {
+        if ((posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7) && posicionBrillo === 0) {
+            pantalla.style.filter = "brightness(0.8)";
+            posicionBrillo = 1;
+        } else if (posicionBrillo === 1) {
+            pantalla.style.filter = "brightness(0.6)";
+            posicionBrillo = 2;
+        } else if (posicionBrillo === 2) {
+            pantalla.style.filter = "brightness(0.8)";
+            posicionBrillo = 3;
+        } else if (posicionBrillo === 3) {
+            pantalla.style.filter = "brightness(1)";
+            posicionBrillo = 0;
+        }
+    }
+});
+
 
 // BOTON DE RESETEO (HOME):
 
