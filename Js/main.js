@@ -35,7 +35,6 @@ jostickDerecho.addEventListener("click", () => {
 });
 
 
-
 // JOYCON IZQUIERDO:
 
 const joyconIzquierdo = document.querySelector(".joyconIzquierdo");
@@ -147,6 +146,7 @@ botonOn.addEventListener("click", () => {
         pantalla.style.filter = "grayscale(100%)";
         luzEncendido.style.backgroundColor = "#303235"
         videoElement.style.display = "none"; // Oculta el elemento de video
+        audioElement.pause();
         botonOnEncendido = false;
     } else {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
@@ -333,6 +333,8 @@ quitarAudio.addEventListener("click", function () {
         audioElement.pause();
     }
 });
+
+
 
 
 
