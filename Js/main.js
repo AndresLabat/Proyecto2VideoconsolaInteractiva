@@ -14,7 +14,7 @@ jostickDerecho.addEventListener("click", () => {
         }, 2000);
         desplazamientoJoyconDerecho = false;
 
-        jostickDerecho.style.marginTop = "1.5em";
+        jostickDerecho.style.marginTop = "1.2em";
         setTimeout(() => {
             jostickDerecho.style.marginTop = "";
         }, 700);
@@ -26,7 +26,7 @@ jostickDerecho.addEventListener("click", () => {
         }, 2000);
         desplazamientoJoyconDerecho = true;
 
-        jostickDerecho.style.marginBottom = "1.5em";
+        jostickDerecho.style.marginBottom = "1.2em";
         setTimeout(() => {
             jostickDerecho.style.marginBottom = "";
         }, 700);
@@ -50,7 +50,7 @@ jostickIzquierdo.addEventListener("click", () => {
         }, 2000);
         desplazamientoJoyconIzquierdo = false;
 
-        jostickIzquierdo.style.marginTop = "1.5em";
+        jostickIzquierdo.style.marginTop = "1.2em";
         setTimeout(() => {
             jostickIzquierdo.style.marginTop = "";
         }, 700);
@@ -62,7 +62,7 @@ jostickIzquierdo.addEventListener("click", () => {
         }, 2000);
         desplazamientoJoyconIzquierdo = true;
 
-        jostickIzquierdo.style.marginBottom = "1.5em";
+        jostickIzquierdo.style.marginBottom = "1.2em";
         setTimeout(() => {
             jostickIzquierdo.style.marginBottom = "";
         }, 700);
