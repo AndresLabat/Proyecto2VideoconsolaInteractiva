@@ -315,23 +315,38 @@ home.addEventListener("click", () => {
 // BOTON SUBIR VOLUMEN:
 
 const audioElement = document.querySelector("#audio");
-const reproducirAudio = document.querySelector("#volumenUp");
+const subirAudio = document.querySelector("#volumenUp");
+let volumen = 0;
 
-reproducirAudio.addEventListener("click", function () {
-    if (botonOnEncendido == true) {
+subirAudio.addEventListener("click", function () {
+    if (volumen === 0 && botonOnEncendido == true) {
         audioElement.play();
+        volumen = 0.2;
+    } else if (volumen === 0.2 && botonOnEncendido == true) {
+        volumen = 0.6;
+    } else if (volumen === 0.6 && botonOnEncendido == true) {
+        volumen = 1;
     }
+    audioElement.volume = volumen;
 });
+
+
 
 
 // BOTON BAJAR VOLUMEN:
 
-const quitarAudio = document.querySelector("#volumenDown");
+const bajarAudio = document.querySelector("#volumenDown");
 
-quitarAudio.addEventListener("click", function () {
-    if (botonOnEncendido == true) {
+bajarAudio.addEventListener("click", function () {
+    if (volumen === 1 && botonOnEncendido == true) {
+        volumen = 0.6;
+    } else if (volumen === 0.6 && botonOnEncendido == true){
+        volumen = 0.2;
+    } else if (volumen === 0.2 && botonOnEncendido == true){
         audioElement.pause();
+        volumen = 0;
     }
+    audioElement.volume = volumen;
 });
 
 
