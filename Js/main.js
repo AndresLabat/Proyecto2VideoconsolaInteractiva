@@ -132,7 +132,7 @@ botonOn.addEventListener("click", () => {
 });
 
 
-// BOTON HACIA DELANTE:
+// BOTON A (HACIA DELANTE):
 
 const botonA = document.querySelector("#botonA");
 const videoElement = document.getElementById("videoElement");
@@ -164,12 +164,17 @@ botonA.addEventListener("click", () => {
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
             posicion = 0;
+        } else if (posicion === 5) {
+            pantalla.style.backgroundImage = "url('img/menu nintendo eshop.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 6;
         }
     }
 });
 
 
-// BOTON HACIA DETRAS:
+// BOTON B (HACIA DETRAS):
 
 const botonB = document.getElementById("botonB");
 
@@ -200,6 +205,37 @@ botonB.addEventListener("click", () => {
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
             posicion = 3;
+        } else if (posicion === 6) {
+            pantalla.style.backgroundImage = "url('img/apertura nintendo eshop.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 5;
+        }
+    }
+});
+
+// BOTON Y (NINTENDO ESHOP):
+
+const botonY = document.querySelector("#botonY");
+
+botonY.addEventListener("click", () => {
+    event.stopPropagation();
+    if (botonOnEncendido == true) {
+        if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4) {
+            pantalla.style.backgroundImage = "url('img/apertura nintendo eshop.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 5;
+        } else if (posicion === 5) {
+            pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 0;
+        } else if (posicion === 6) {
+            pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 0;
         }
     }
 });
