@@ -3,21 +3,21 @@
 
 const joyconDerecho = document.querySelector(".joyconDerecho");
 
-let desplazamientoJoyconDerecho = true;
+let desplazamientoJoyconDerecho = false;
 
 joyconDerecho.addEventListener("click", () => {
-    if (desplazamientoJoyconDerecho == false) {
+    if (desplazamientoJoyconDerecho == true) {
         joyconDerecho.style.marginRight = "";
         setTimeout(() => {
             joyconDerecho.style.marginBottom = "";
         }, 2000);
-        desplazamientoJoyconDerecho = true;
+        desplazamientoJoyconDerecho = false;
     } else {
         joyconDerecho.style.marginBottom = "32em";
         setTimeout(() => {
-            joyconDerecho.style.marginRight = "24.5em";   //49em
+            joyconDerecho.style.marginRight = "24.5em";
         }, 2000);
-        desplazamientoJoyconDerecho = false;
+        desplazamientoJoyconDerecho = true;
     }
 });
 
@@ -26,21 +26,21 @@ joyconDerecho.addEventListener("click", () => {
 
 const joyconIzquierdo = document.querySelector(".joyconIzquierdo");
 
-let desplazamientoJoyconIzquierdo = true;
+let desplazamientoJoyconIzquierdo = false;
 
 joyconIzquierdo.addEventListener("click", () => {
-    if (desplazamientoJoyconIzquierdo == false) {
+    if (desplazamientoJoyconIzquierdo == true) {
         joyconIzquierdo.style.marginLeft = "";
         setTimeout(() => {
             joyconIzquierdo.style.marginBottom = "";
         }, 2000);
-        desplazamientoJoyconIzquierdo = true;
+        desplazamientoJoyconIzquierdo = false;
     } else {
         joyconIzquierdo.style.marginBottom = "32em";
         setTimeout(() => {
-            joyconIzquierdo.style.marginLeft = "24.5em";   //49em
+            joyconIzquierdo.style.marginLeft = "24.5em";
         }, 2000);
-        desplazamientoJoyconIzquierdo = false;
+        desplazamientoJoyconIzquierdo = true;
     }
 });
 
@@ -50,10 +50,10 @@ joyconIzquierdo.addEventListener("click", () => {
 const baseDeCarga = document.querySelector(".divDoc");
 const consola = document.querySelector(".consola");
 
-let margenesAplicados = true;
+let margenesAplicados = false;
 
 baseDeCarga.addEventListener("click", () => {
-    if (margenesAplicados == false) {
+    if (margenesAplicados == true) {
         consola.style.marginTop = "";
         setTimeout(() => {
             consola.style.marginRight = "";
@@ -62,21 +62,21 @@ baseDeCarga.addEventListener("click", () => {
             baseDeCarga.style.marginLeft = "";
         }, 2000);
 
-        margenesAplicados = true;
+        margenesAplicados = false;
 
         joyconDerecho.style.marginRight = "";
         setTimeout(() => {
             joyconDerecho.style.marginBottom = "";
         }, 2000);
 
-        desplazamientoJoyconDerecho = true;
+        desplazamientoJoyconDerecho = false;
 
         joyconIzquierdo.style.marginLeft = "";
         setTimeout(() => {
             joyconIzquierdo.style.marginBottom = "";
         }, 2000);
 
-        desplazamientoJoyconIzquierdo = true;
+        desplazamientoJoyconIzquierdo = false;
 
 
     } else {
@@ -86,21 +86,21 @@ baseDeCarga.addEventListener("click", () => {
             consola.style.marginTop = "8em";
         }, 2000);
 
-        margenesAplicados = false;
+        margenesAplicados = true;
 
         joyconDerecho.style.marginBottom = "32em";
         setTimeout(() => {
-            joyconDerecho.style.marginRight = "24.5em";   //49em
+            joyconDerecho.style.marginRight = "24.5em";
         }, 2000);
 
-        desplazamientoJoyconDerecho = false;
+        desplazamientoJoyconDerecho = true;
 
         joyconIzquierdo.style.marginBottom = "32em";
         setTimeout(() => {
-            joyconIzquierdo.style.marginLeft = "24.5em";   //49em
+            joyconIzquierdo.style.marginLeft = "24.5em";
         }, 2000);
 
-        desplazamientoJoyconIzquierdo = false;
+        desplazamientoJoyconIzquierdo = true;
     }
 });
 
@@ -110,24 +110,24 @@ baseDeCarga.addEventListener("click", () => {
 const botonOn = document.querySelector("#botonEncendido");
 const luzEncendido = document.querySelector(".luzEncendido");
 const pantalla = document.querySelector(".pantalla");
-let imagen = 0;
+let posicion = 0;
 
-let botonOnEncendido = true;
+let botonOnEncendido = false;
 
 botonOn.addEventListener("click", () => {
-    if (botonOnEncendido == false) {
+    if (botonOnEncendido == true) {
         pantalla.style.backgroundImage = "";
         pantalla.style.filter = "grayscale(100%)";
         luzEncendido.style.backgroundColor = "#303235"
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        botonOnEncendido = true;
+        videoElement.style.display = "none"; // Oculta el elemento de video
+        botonOnEncendido = false;
     } else {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
         pantalla.style.filter = "none";
         luzEncendido.style.backgroundColor = "#D6FF99";
-        botonOnEncendido = false;
-        imagen = 0;
+        botonOnEncendido = true;
+        posicion = 0;
     }
 });
 
@@ -139,30 +139,32 @@ const videoElement = document.getElementById("videoElement");
 
 botonA.addEventListener("click", () => {
     event.stopPropagation();
-    if (imagen === 0) {
-        pantalla.style.backgroundImage = "url('img/super mario odyssey.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 1;
-    } else if (imagen === 1) {
-        pantalla.style.backgroundImage = "url('img/super mario odyssey in game.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 2;
-    } else if (imagen === 2) {
-        pantalla.style.backgroundImage = "url('img/menu super mario odyssey.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 3;
-    } else if (imagen === 3) {
-        pantalla.style.backgroundImage = ""; // Eliminar el fondo de pantalla
-        videoElement.style.display = "block"; // Mostrar el elemento de video
-        imagen = 4; // Volver al estado inicial de 0
-    } else if (imagen === 4) {
-        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 0;
+    if (botonOnEncendido == true) {
+        if (posicion === 0) {
+            pantalla.style.backgroundImage = "url('img/super mario odyssey.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 1;
+        } else if (posicion === 1) {
+            pantalla.style.backgroundImage = "url('img/super mario odyssey in game.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 2;
+        } else if (posicion === 2) {
+            pantalla.style.backgroundImage = "url('img/menu super mario odyssey.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 3;
+        } else if (posicion === 3) {
+            pantalla.style.backgroundImage = "";  // Elimina el fondo de pantalla
+            videoElement.style.display = "block"; // Muestra el elemento de video
+            posicion = 4;
+        } else if (posicion === 4) {
+            pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 0;
+        }
     }
 });
 
@@ -173,33 +175,34 @@ const botonB = document.getElementById("botonB");
 
 botonB.addEventListener("click", () => {
     event.stopPropagation();
-    if (imagen === 2) {
-        pantalla.style.backgroundImage = "url('img/super mario odyssey.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 1;
-    } else if (imagen === 3) {
-        pantalla.style.backgroundImage = "url('img/super mario odyssey in game.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 2;
-    } else if (imagen === 4) {
-        pantalla.style.backgroundImage = "url('img/menu super mario odyssey.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 3;
-    } else if (imagen === 0) {
-        pantalla.style.backgroundImage = ""; // Eliminar el fondo de pantalla
-        videoElement.style.display = "block"; // Mostrar el elemento de video
-        imagen = 4; // Volver al estado inicial de 0
-    } else if (imagen === 1) {
-        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 2;
+    if (botonOnEncendido == true) {
+        if (posicion === 0) {
+            pantalla.style.backgroundImage = "";
+            videoElement.style.display = "block";
+            posicion = 4;
+        } else if (posicion === 1) {
+            pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 0;
+        } else if (posicion === 2) {
+            pantalla.style.backgroundImage = "url('img/super mario odyssey.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 1;
+        } else if (posicion === 3) {
+            pantalla.style.backgroundImage = "url('img/super mario odyssey in game.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 2;
+        } else if (posicion === 4) {
+            pantalla.style.backgroundImage = "url('img/menu super mario odyssey.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 3;
+        }
     }
 });
-
 
 
 // BOTON DE RESETEO (HOME):
@@ -208,30 +211,58 @@ const home = document.querySelector(".divBotonHome");
 
 home.addEventListener("click", () => {
     event.stopPropagation();
-    if (imagen === 1) {
+    if (posicion === 1) {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 0;
-    } else if (imagen === 2) {
+        videoElement.style.display = "none";
+        posicion = 0;
+    } else if (posicion === 2) {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 0;
-    } else if (imagen === 3) {
+        videoElement.style.display = "none";
+        posicion = 0;
+    } else if (posicion === 3) {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 0;
-    } else if (imagen === 4) {
+        videoElement.style.display = "none";
+        posicion = 0;
+    } else if (posicion === 4) {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 0;
-    } else if (imagen === 0) {
+        videoElement.style.display = "none";
+        posicion = 0;
+    } else if (posicion === 0) {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none"; // Ocultar el elemento de video
-        imagen = 0;
+        videoElement.style.display = "none";
+        posicion = 0;
     }
 });
+
+
+// BOTON SUBIR VOLUMEN:
+
+const audioElement = document.querySelector("#audio");
+const reproducirAudio = document.querySelector("#volumenUp");
+
+reproducirAudio.addEventListener("click", function () {
+    if (botonOnEncendido == true) {
+        audioElement.play();
+    }
+});
+
+
+// BOTON BAJAR VOLUMEN:
+
+const quitarAudio = document.querySelector("#volumenDown");
+
+quitarAudio.addEventListener("click", function () {
+    if (botonOnEncendido == true) {
+        audioElement.pause();
+    }
+});
+
+
+
+
+
