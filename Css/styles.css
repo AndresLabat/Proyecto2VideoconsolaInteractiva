@@ -343,12 +343,22 @@ body {
     red,
     white);
     filter: grayscale(100%);
+
 }
 
 .pantalla img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#videoElement{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    display: none;
 }
 
 
