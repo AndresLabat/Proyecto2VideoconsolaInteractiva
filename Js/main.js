@@ -169,6 +169,11 @@ botonA.addEventListener("click", () => {
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
             posicion = 6;
+        } else if (posicion === 6) {
+            pantalla.style.backgroundImage = "url('img/error compra nintendo shop.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 7;
         }
     }
 });
@@ -210,6 +215,11 @@ botonB.addEventListener("click", () => {
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
             posicion = 5;
+        } else if (posicion === 7) {
+            pantalla.style.backgroundImage = "url('img/menu nintendo eshop.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 6;
         }
     }
 });
@@ -226,12 +236,7 @@ botonY.addEventListener("click", () => {
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
             posicion = 5;
-        } else if (posicion === 5) {
-            pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-            pantalla.style.backgroundSize = "cover";
-            videoElement.style.display = "none";
-            posicion = 0;
-        } else if (posicion === 6) {
+        } else if (posicion === 5 || posicion === 6 || posicion === 7) {
             pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
@@ -247,27 +252,7 @@ const home = document.querySelector(".divBotonHome");
 
 home.addEventListener("click", () => {
     event.stopPropagation();
-    if (posicion === 1) {
-        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none";
-        posicion = 0;
-    } else if (posicion === 2) {
-        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none";
-        posicion = 0;
-    } else if (posicion === 3) {
-        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none";
-        posicion = 0;
-    } else if (posicion === 4) {
-        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none";
-        posicion = 0;
-    } else if (posicion === 0) {
+    if (posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7) {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
         videoElement.style.display = "none";
