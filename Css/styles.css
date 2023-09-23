@@ -412,7 +412,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at 100% 100%, #212325 0%, #5d6167 10%, #5d6167 60%, #212325 100%);}
+    background: radial-gradient(circle at 100% 100%, #212325 0%, #5d6167 10%, #5d6167 60%, #212325 100%);
+}
 
 .circuloInteriorJostick{
     width: 1.54em;
@@ -455,7 +456,14 @@ body {
 .divImgJostick{
     width: 2.52em;
     height: 2.52em;
+    transition: 1s;
 }
+/* 
+.divImgJostick:hover{
+    width: 2.52em;
+    height: 2.52em;
+    margin-bottom: 1em;
+} */
 
 .divImgJostick img{
     height: 100%;
@@ -648,5 +656,13 @@ body {
 }
 
 #botonX{
+    cursor: pointer;
+}
+
+.izquierdo{
+    cursor: pointer;
+}
+
+.derecho{
     cursor: pointer;
 }

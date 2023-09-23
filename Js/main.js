@@ -2,45 +2,72 @@
 // JOYCON DERECHO:
 
 const joyconDerecho = document.querySelector(".joyconDerecho");
+const jostickDerecho = document.querySelector(".derecho");
 
 let desplazamientoJoyconDerecho = false;
 
-joyconDerecho.addEventListener("click", () => {
+jostickDerecho.addEventListener("click", () => {
     if (desplazamientoJoyconDerecho == true) {
         joyconDerecho.style.marginRight = "";
         setTimeout(() => {
             joyconDerecho.style.marginBottom = "";
         }, 2000);
         desplazamientoJoyconDerecho = false;
+
+        jostickDerecho.style.marginTop = "1.5em";
+        setTimeout(() => {
+            jostickDerecho.style.marginTop = "";
+        }, 700);
+
     } else {
         joyconDerecho.style.marginBottom = "32em";
         setTimeout(() => {
             joyconDerecho.style.marginRight = "24.5em";
         }, 2000);
         desplazamientoJoyconDerecho = true;
+
+        jostickDerecho.style.marginBottom = "1.5em";
+        setTimeout(() => {
+            jostickDerecho.style.marginBottom = "";
+        }, 700);
+
     }
 });
+
 
 
 // JOYCON IZQUIERDO:
 
 const joyconIzquierdo = document.querySelector(".joyconIzquierdo");
+const jostickIzquierdo = document.querySelector(".izquierdo");
 
 let desplazamientoJoyconIzquierdo = false;
 
-joyconIzquierdo.addEventListener("click", () => {
+jostickIzquierdo.addEventListener("click", () => {
     if (desplazamientoJoyconIzquierdo == true) {
         joyconIzquierdo.style.marginLeft = "";
         setTimeout(() => {
             joyconIzquierdo.style.marginBottom = "";
         }, 2000);
         desplazamientoJoyconIzquierdo = false;
+
+        jostickIzquierdo.style.marginTop = "1.5em";
+        setTimeout(() => {
+            jostickIzquierdo.style.marginTop = "";
+        }, 700);
+
     } else {
         joyconIzquierdo.style.marginBottom = "32em";
         setTimeout(() => {
             joyconIzquierdo.style.marginLeft = "24.5em";
         }, 2000);
         desplazamientoJoyconIzquierdo = true;
+
+        jostickIzquierdo.style.marginBottom = "1.5em";
+        setTimeout(() => {
+            jostickIzquierdo.style.marginBottom = "";
+        }, 700);
+
     }
 });
 
