@@ -71,7 +71,7 @@ jostickIzquierdo.addEventListener("click", () => {
 });
 
 
-// CONSOLA Y DOC:
+// CONSOLA Y DOCK:
 
 const baseDeCarga = document.querySelector(".divDoc");
 const consola = document.querySelector(".consola");
@@ -129,6 +129,8 @@ baseDeCarga.addEventListener("click", () => {
         desplazamientoJoyconIzquierdo = true;
     }
 });
+
+
 
 
 // BOTON ENCENDIDO:
