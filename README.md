@@ -16,7 +16,7 @@ Desarrollada como parte del Bootcamp de Full Stack Developer de Geekshubs Academ
       <img src="img/imagenes README/posicion todo desmontado, consola encendida.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>Posición consola desmontada y encendida</b></em>
+      <em><b>Consola desmontada y encendida</b></em>
    </div>   
 </p>
 
@@ -70,7 +70,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/boton On.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>Posición consola desmontada y encendida</b></em>
+      <em><b>el botón ON controla el encendido y apagado de la consola</b></em>
    </div>   
 </p>
 
@@ -101,7 +101,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/click en el jostick.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al hacer click en un jostick, el joy-con se desmonta</b></em>
+      <em><b>al hacer click en un jostick, el joy-con asciende, separandose del cuerpo de la consola</b></em>
    </div>   
 </p>
 
@@ -110,7 +110,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/click en el jostick desmontado.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al volver a hacer click, el joy-con vuelve a montarse en la consola</b></em>
+      <em><b>al volver a hacer click, el joy-condesciende, volviendo a montarse en la consola</b></em>
    </div>   
 </p>
 
