@@ -528,7 +528,7 @@ body {
 .divImgJostick{
     width: 2.52em;
     height: 2.52em;
-    transition: 1s;
+    /* transition: 1s; */
 }
 /* 
 .divImgJostick:hover{
@@ -706,7 +706,7 @@ body {
     height: 1.05em;
     cursor: pointer;
     border-radius: 50%;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .divBotonHome:hover{
@@ -714,6 +714,10 @@ body {
     height: 1.05em;
     cursor: pointer;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.divBotonHome:active{
+    transform: translate(-0.1em, -0.1em);
 }
 
 .divBotonHome img{
@@ -756,7 +760,7 @@ body {
 .izquierdo, .derecho{
     border-radius: 50%;
     cursor: pointer;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .izquierdo:hover, .derecho:hover{
