@@ -176,9 +176,28 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
 
 - **Botón Home**: El botón Home te lleva de vuelta al menú principal en cualquier momento.
 
+<p>
+   <div align="center">
+      <img src="img/imagenes README/boton home.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>al pulsar el botón Home, estemos en el carrusel o video que estemos, se mostrara la imagen del menú de la consola</b></em>
+   </div>   
+</p>
+
 - **Botón +Vol**: El botón +Vol es el encargado de subir el volumen del audio, siempre que la consola esta encendida, aunque este audio comienza con 0 de volumen para evitar sobresaltos.
 
-- **Botón -Vol**: El botón -Vol es el encargado de bajar el volumen en el caso de que lo hayamos subido previamente
+- **Botón -Vol**: El botón -Vol es el encargado de bajar el volumen en el caso de que lo hayamos subido previamente.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/volumen.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>al hacer click en el botón +Vol se sube el volumen un 30% cada vez y en el botón -Vol se baja la misma cantidad hasta que no se oye nada</b></em>
+   </div>   
+</p>
+
 
  Todo esto esta sobre un video de fondo de imita un salon con una chimenea encendida y lluvia cayendo en el exterior, mojando la ventana, queriendo simular el calor del hogar y un momento de confort en el que disfrutas de tu tiempo de ocio y relax jugando a la videoconsola.
 
