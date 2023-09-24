@@ -70,7 +70,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/boton On.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>el botón ON controla el encendido y apagado de la consola</b></em>
+      <em><b>El botón ON controla el encendido y apagado de la consola</b></em>
    </div>   
 </p>
 
@@ -101,7 +101,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/click en el jostick.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al hacer click en un jostick, el joy-con asciende, separandose del cuerpo de la consola</b></em>
+      <em><b>Al hacer click en un jostick, el joy-con asciende, separandose del cuerpo de la consola</b></em>
    </div>   
 </p>
 
@@ -110,7 +110,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/click en el jostick desmontado.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al volver a hacer click, el joy-condesciende, volviendo a montarse en la consola</b></em>
+      <em><b>Al volver a hacer click, el joy-condesciende, volviendo a montarse en la consola</b></em>
    </div>   
 </p>
 
@@ -121,7 +121,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/click en botones A y B posicion 1.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al hacer click en el boton A, avanzamos en el carrusel de imagenes y videos</b></em>
+      <em><b>Al hacer click en el boton A, avanzamos en el carrusel de imagenes y videos</b></em>
    </div>   
 </p>
 
@@ -130,7 +130,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/click en botones A y B posicion 2.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al hacer click en el boton B, retrocedemos en el carrusel de imagenes y videos</b></em>
+      <em><b>Al hacer click en el boton B, retrocedemos en el carrusel de imagenes y videos</b></em>
    </div>   
 </p>
 
@@ -141,7 +141,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/acceso a nintendo eshop.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al hacer click en el boton Y, accedemos a la Nintendo eshop</b></em>
+      <em><b>Al hacer click en el boton Y, accedemos a la Nintendo eshop</b></em>
    </div>   
 </p>
 
@@ -150,7 +150,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/navegando por la eshop.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>ahora podemos usar los botones A y B para navegar por la eshop</b></em>
+      <em><b>Ahora podemos usar los botones A y B para navegar por la eshop</b></em>
    </div>   
 </p>
 
@@ -161,7 +161,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/brillo al maximo.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>aqui vemos la consola con el brillo al máximo</b></em>
+      <em><b>Aqui vemos la consola con el brillo al máximo</b></em>
    </div>   
 </p>
 
@@ -170,7 +170,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/brillo a la mitad.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al pulsar el botón X, cambiamos ese brillo, tiene 3 posibilidades</b></em>
+      <em><b>Al pulsar el botón X, cambiamos ese brillo, tiene 3 posibilidades</b></em>
    </div>   
 </p>
 
@@ -181,7 +181,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/boton home.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al pulsar el botón Home, estemos en el carrusel o video que estemos, se mostrara la imagen del menú de la consola</b></em>
+      <em><b>Al pulsar el botón Home, estemos en el carrusel o video que estemos, se mostrara la imagen del menú de la consola</b></em>
    </div>   
 </p>
 
@@ -194,23 +194,23 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/volumen.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>al hacer click en el botón +Vol se sube el volumen un 30% cada vez y en el botón -Vol se baja la misma cantidad hasta que no se oye nada</b></em>
+      <em><b>Al hacer click en el botón +Vol se sube el volumen un 30% cada vez y en el botón -Vol se baja la misma cantidad hasta que no se oye nada</b></em>
    </div>   
 </p>
 
 
- Todo esto esta sobre un video de fondo de imita un salon con una chimenea encendida y lluvia cayendo en el exterior, mojando la ventana, queriendo simular el calor del hogar y un momento de confort en el que disfrutas de tu tiempo de ocio y relax jugando a la videoconsola.
+ Todo esto esta sobre un video de fondo de imita un salón con una chimenea encendida y lluvia cayendo en el exterior, mojando la ventana, queriendo simular el calor del hogar y un momento de confort en el que disfrutas de tu tiempo de ocio y relax jugando a la videoconsola.
 
- Este proyecto es una dedicatoria a mi mujer y a su gran afición por la Nintendo Switch, intentando simular lo que ella describe como "la definición de un buen dia", lluvia exterior, el hogar, calor y su gran aficion, la Nintendo Switch.
+ Este proyecto es una dedicatoria a mi mujer y a su gran afición por la Nintendo Switch, intentando simular lo que ella describe como "la definición de un buen día", lluvia exterior, el hogar, calor y su gran aficion, la Nintendo Switch.
 
 
 ## 🎯Problemas y Soluciones
 
 ### 1. El tamaño de la consola y el Dock son muy grandes
 
-- **🚧Problema**: debido a que el diseño original se ha realizado en un monitor de 32 pulgadas de mi ordenador de sobremesa, al abrir el proyecto en el ordenador portatil, que tiene una resolución distinta, quedaban enormes todos los elementos de la consola.
+- **🚧Problema**: Debido a que el diseño original se ha realizado en el monitor de 32 pulgadas de mi ordenador de sobremesa, al abrir el proyecto en el ordenador portatil, que tiene una resolución distinta, quedaban enormes todos los elementos de la consola.
 
-   - **💡Solución**: Escalar todos los elementos del Css menos el del video que hay de fondo al 70% de su tamaño y redistribuirlos en altura y anchura por la pantalla.
+   - **💡Solución**: Escalar todos los elementos del Css menos el del vídeo que hay de fondo al 70% de su tamaño y redistribuirlos en altura y anchura por la pantalla.
 
 <p>
    <div align="center">
@@ -232,7 +232,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
 
 ### 2. Doble click en algunas posiciones para que los eventos ocurran
 
-- **🚧Problema**: el mayor problema que he tenido a la hora de realizar los carruseles es hacer la parte de Css de forma que quede bien definido lo que quiero que ocurra en cada posición, ya que a veces necesitaba 2 clicks en un mismo botón para que ocurriera el cambio de imagen.
+- **🚧Problema**: El mayor problema que he tenido a la hora de realizar los carruseles es hacer la parte de Css de forma que quede bien definido lo que quiero que ocurra en cada posición, ya que a veces necesitaba 2 clicks en un mismo botón para que ocurriera el cambio de imagen.
 
    - **💡Solución**: El uso de una variable definida anteriormente fuera del evento para poder usarla como condición en los "if" e "if else".
 
@@ -241,37 +241,37 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/variable posicion.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>la variable "posicion" es la encargada del correcto funcionamiento de los carrusel</b></em>
+      <em><b>La variable "posición" es la encargada del correcto funcionamiento de los carrusel</b></em>
    </div>   
 </p>
 
 ### 3. Evitar que el evento del Joy-con ocurriera al hacer click en un botón contenido dentro del mismo
 
-- **🚧Problema**: en un principio diseñe que cuando se hiciera click en un mando, en cualquiera de sus puntos, este se desplazara hasta la parte superior de la consola y, en caso de estar ya en la posición superior, volviera al lateral de la consola, pero esto hacía que al hacer click en alguno de sus botones, en lugar de suceder el evento del botón en concreto, sucediera el evento del mando .
+- **🚧Problema**: En un principio diseñe que cuando se hiciera click en un mando, en cualquiera de sus puntos, este se desplazara hasta la parte superior de la consola y, en caso de estar ya en la posición superior, volviera al lateral de la consola, pero esto hacía que al hacer click en alguno de sus botones, en lugar de suceder el evento del botón en concreto, sucediera el evento del mando .
 
-   - **💡Solución**: agregarle a los botones en el código de javascript un event.stopPropagation(); de esta forma, solo su evento particular sucedía al hacerle click en dicho botón.
+   - **💡Solución**: Agregarle a los botones en el código de javascript un event.stopPropagation(); de esta forma, solo su evento particular sucedía al hacerle click en dicho botón.
 
 <p>
    <div align="center">
       <img src="img/imagenes README/error evento Joycon.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>hacer click en cualquier punto del mando provocaba su desplazamiento y anulaba el resto de eventos de sus botones</b></em>
+      <em><b>Hacer click en cualquier punto del mando provocaba su desplazamiento y anulaba el resto de eventos de sus botones</b></em>
    </div>   
 </p>
 
 ### 4. Evitar que un evento ocurriera al hacer click por accidente en el Joy-con
 
-- **🚧Problema**: el hecho de haber diseñado que cuando se hiciera click en un mando, en cualquiera de sus puntos esto provocara su desplazamiento hacía que al hacer click en alguno de sus botones, si por accidente pinchabas fuera, ocurriera el evento del mando, siendo incómodo ya que implicaba un desplazamiento del mismo.
+- **🚧Problema**: El hecho de haber diseñado que cuando se hiciera click en un mando, en cualquiera de sus puntos esto provocara su desplazamiento hacía que al hacer click en alguno de sus botones, si por accidente pinchabas fuera, ocurriera el evento del mando, siendo incómodo ya que implicaba un desplazamiento del mismo.
 
-   - **💡Solución 1**: eliminar el evento de desplazamiento del mando en cualquier punto del mismo, y asignarselo a su propio jostick, quedando mucho mas controlado y elegante en la ejecución, ya que además le he añadido movimiento al jostick al clickar sobre él.
+   - **💡Solución 1**: Eliminar el evento de desplazamiento del mando en cualquier punto del mismo, y asignarselo a su propio jostick, quedando mucho mas controlado y elegante en la ejecución, ya que además le he añadido movimiento al jostick al clickar sobre él.
 
 <p>
    <div align="center">
       <img src="img/imagenes README/click en el jostick desmontado.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>ahora para provocar el desplazamiento del mando, hay que hacer click en el jostick</b></em>
+      <em><b>Ahora para provocar el desplazamiento del mando, hay que hacer click en el jostick</b></em>
    </div>   
 </p>
 
