@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoconsola interactiva</title>
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+
+<body>
+    <div class="contenedorAudio">
+        <audio id="audio" src="audio/peachs-castle meloboom.mp3" loop></audio>
+    </div>
+    <div class="contenedorVideo">
+        <video autoplay muted loop>
+            <source src="video/video de fondo.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    <div class="nintendoSwitch">
+
+        <div class="divConsolaDoc">
+            <div class="consola">
+
+                <!-- MANDO IZQUIERDO -->
+                <div class="joyconIzquierdo">
+
+                    <div class="divBotonMenos">
+                        <div class="botonMenos"></div>
+                    </div>
+
+                    <div class="divJostick">
+                        <div class="jostick">
+                            <!-- <div class="circuloInteriorJostick"></div> -->
+                            <div class="divImgJostick izquierdo">
+                                <img src="img/Jostick.png" alt="Jostick">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divCruceta">
+                        <div class="divContieneCirculos">
+                            <div class="divContieneCirculosRow">
+                                <div class="divContieneCirculosRow1Col1">
+                                    <div class="botonCruceta">
+                                        <div class="trianguloSuperior"></div>
+                                    </div>
+                                </div>
+                                <div class="divContieneCirculosRow1Col2">
+                                    <div class="botonCruceta">
+                                        <div class="trianguloDerecho"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divContieneCirculosRow">
+                                <div class="divContieneCirculosRow1Col1">
+                                    <div class="botonCruceta">
+                                        <div class="trianguloIzquierdo"></div>
+                                    </div>
+                                </div>
+                                <div class="divContieneCirculosRow1Col2">
+                                    <div class="botonCruceta">
+                                        <div class="trianguloInferior"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divBotonInferiorIzquierdo">
+                        <div class="DivImgCharmander">
+                            <img src="img/Charmander.png" alt="imagen Eeve">
+                        </div>
+                        <div class="botonCapturaPantalla">
+                            <div class="botonCapturaPantallaCirculoInterior"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CUERPO DE LA CONSOLA -->
+                <div class="consolaConBotones">
+
+                    <div class="botonesPantalla">
+                        <div class="divBotonPantalla">
+                            <div id="botonEncendido">ON</div>
+                            <div id="volumenDown">-Vol</div>
+                            <div id="volumenUp">+Vol</div>
+                        </div>
+                        <div class="divBotonPantalla"></div>
+                        <div class="divBotonPantalla"></div>
+                    </div>
+
+                    <div class="cuerpoPantalla">
+                        <div class="bordePantalla">
+                            <div class="pantalla">
+                                <video id="videoElement" autoplay muted>
+                                    <source src="video/mario odyssey video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MANDO DERECHO -->
+                <div class="joyconDerecho">
+
+                    <div class="divBotonMas">
+                        <div class="botonMas">
+                            <div class="row1">
+                                <div class="row1col1"></div>
+                                <div class="row1col2"></div>
+                                <div class="row1col3"></div>
+                            </div>
+                            <div class="row2">
+                                <div class="row2col1"></div>
+                                <div class="row2col2"></div>
+                                <div class="row2col3"></div>
+                            </div>
+                            <div class="row3">
+                                <div class="row3col1"></div>
+                                <div class="row3col2"></div>
+                                <div class="row3col3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divCruceta">
+                        <div class="divContieneCirculos">
+                            <div class="divContieneCirculosRow">
+                                <div class="divContieneCirculosRow1Col1">
+                                    <div class="botonCruceta" id="botonX">
+                                        <div class="textoCruceta">X</div>
+                                    </div>
+                                </div>
+                                <div class="divContieneCirculosRow1Col2">
+                                    <div class="botonCruceta" id="botonA">
+                                        <div class="textoCruceta">A</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divContieneCirculosRow">
+                                <div class="divContieneCirculosRow1Col1">
+                                    <div class="botonCruceta" id="botonY">
+                                        <div class="textoCruceta">Y</div>
+                                    </div>
+                                </div>
+                                <div class="divContieneCirculosRow1Col2">
+                                    <div class="botonCruceta" id="botonB">
+                                        <div class="textoCruceta">B</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divJostick">
+                        <div class="jostick">
+                            <!-- <div class="circuloInteriorJostick"></div> -->
+                            <div class="divImgJostick derecho">
+                                <img src="img/Jostick.png" alt="Jostick">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divBotonInferiorDerecho">
+                        <div class="botonHome">
+                            <div class="divBotonHome">
+                                <img src="img/Boton Home.png" alt="">
+                            </div>
+                            <div class="DivImgEevee">
+                                <img src="img/Eevee.png" alt="imagen Eeve">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BASE DE CARGA (DOC) -->
+            <div class="divDoc">
+
+                <div class="divDocInterno">
+                    <div class="doc">
+                        <div class="divInternoDocLateral">
+                            <div class="divInternoDocLateralInferior">
+                                <div class="luzEncendido"></div>
+                                <div class="logoLuzEncendido">
+                                    <img src="img/Logo luz encendido.png" alt="logo luz encendido">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divInternoDocCentro">
+                            <div class="divImgDoc">
+                                <img src="img/img DOC.png" alt="imagen logo DOC">
+                            </div>
+                        </div>
+                        <div class="divInternoDocLateral"></div>
+                    </div>
+                </div>
+
+                <div class="divPatasDoc">
+                    <div class="patasDoc">
+                        <div class="divInternoPatasDoc">
+                            <div class="pataDocDelanteraIzquierda"></div>
+                            <div class="pataDocTraseraIzquierda"></div>
+                        </div>
+                        <div class="divInternoPatasDoc"></div>
+                        <div class="divInternoPatasDoc">
+                            <div class="pataDocTraseraDerecha"></div>
+                            <div class="pataDocDelanteraDerecha"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="textoPresentacion">Esto es la definición de un buen día para mi mujer</div>
+        <div class="divTituloNSW">
+            <div class="tituloNSW">
+                <a href="index.html">
+                    <img src="img/titulo nintendo switch.png" alt="titulo nintendo switch">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Js/main.js"></script>
+</body>
+
+</html>

@@ -131,8 +131,6 @@ baseDeCarga.addEventListener("click", () => {
 });
 
 
-
-
 // BOTON ENCENDIDO:
 
 const botonOn = document.querySelector("#botonEncendido");
