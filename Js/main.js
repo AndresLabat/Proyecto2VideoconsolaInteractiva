@@ -153,9 +153,12 @@ botonOn.addEventListener("click", () => {
         pantalla.style.backgroundSize = "cover";
         pantalla.style.filter = "none";
         luzEncendido.style.backgroundColor = "#D6FF99";
+        audioElement.play();
+        volumen = 0;
         botonOnEncendido = true;
         posicion = 0;
     }
+    audioElement.volume = volumen;
 });
 
 
@@ -319,18 +322,18 @@ const subirAudio = document.querySelector("#volumenUp");
 let volumen = 0;
 
 subirAudio.addEventListener("click", function () {
-    if (volumen === 0 && botonOnEncendido == true) {
-        audioElement.play();
-        volumen = 0.2;
-    } else if (volumen === 0.2 && botonOnEncendido == true) {
-        volumen = 0.6;
-    } else if (volumen === 0.6 && botonOnEncendido == true) {
-        volumen = 1;
+    if (botonOnEncendido == true) {
+        if (volumen === 0) {
+            volumen = 0.2;
+        } else if (volumen === 0.2) {
+            volumen = 0.6;
+        } else if (volumen === 0.6) {
+            volumen = 1;
+        }
+        
+        audioElement.volume = volumen;
     }
-    audioElement.volume = volumen;
 });
-
-
 
 
 // BOTON BAJAR VOLUMEN:
@@ -338,15 +341,17 @@ subirAudio.addEventListener("click", function () {
 const bajarAudio = document.querySelector("#volumenDown");
 
 bajarAudio.addEventListener("click", function () {
-    if (volumen === 1 && botonOnEncendido == true) {
-        volumen = 0.6;
-    } else if (volumen === 0.6 && botonOnEncendido == true){
-        volumen = 0.2;
-    } else if (volumen === 0.2 && botonOnEncendido == true){
-        audioElement.pause();
-        volumen = 0;
+    if (botonOnEncendido == true) {
+        if (volumen === 1) {
+            volumen = 0.6;
+        } else if (volumen === 0.6){
+            volumen = 0.2;
+        } else if (volumen === 0.2){
+            volumen = 0;
+        }
+
+        audioElement.volume = volumen;
     }
-    audioElement.volume = volumen;
 });
 
 
