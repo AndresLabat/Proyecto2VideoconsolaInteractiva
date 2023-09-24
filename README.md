@@ -170,7 +170,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/brillo a la mitad.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>Al pulsar el botón X, cambiamos ese brillo, tiene 3 posibilidades</b></em>
+      <em><b>Al pulsar el botón X, cambiamos ese brillo, tiene 3 posiciones distintas</b></em>
    </div>   
 </p>
 
