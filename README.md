@@ -206,20 +206,75 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
 
 ## 🎯Problemas y Soluciones
 
-### 1. No puedo encontrar un plato específico en la carta
+### 1. El tamaño de la consola y el Dock son muy grandes
 
-- **🚧Problema**: Si no puedes encontrar un plato específico en la carta es porque esa función aun no ha sido implementada.
+- **🚧Problema**: debido a que el diseño original se ha realizado en un monitor de 32 pulgadas de mi ordenador de sobremesa, al abrir el proyecto en el ordenador portatil, que tiene una resolución distinta, quedaban enormes todos los elementos de la consola.
 
-   - **💡Solución**: Cuando veamos en clase Javascript se le añadirá dicha función.
+   - **💡Solución**: Escalar todos los elementos del Css menos el del video que hay de fondo al 70% de su tamaño y redistribuirlos en altura y anchura por la pantalla.
 
 <p>
    <div align="center">
-      <img src="img/Capturas de pantalla/Home - Index.html - Search inactivo.jpeg" style="max-width: 100%;" width="500">
+      <img src="img/imagenes README/resolucion del monitor del pc, tamaño correcto.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>Search inactivo</b></em>
+      <em><b>Este es el aspecto de los elementos después del escalado, visto en el monitor de 32 pulgadas</b></em>
    </div>   
 </p>
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/posicion todo desmontado, consola encendida.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>Este es el aspecto de los elementos en el ordenador portatil</b></em>
+   </div>   
+</p>
+
+### 2. Doble click en algunas posiciones para que los eventos ocurran
+
+- **🚧Problema**: el mayor problema que he tenido a la hora de realizar los carruseles es hacer la parte de Css de forma que quede bien definido lo que quiero que ocurra en cada posición, ya que a veces necesitaba 2 clicks en un mismo botón para que ocurriera el cambio de imagen.
+
+   - **💡Solución**: El uso de una variable definida anteriormente fuera del evento para poder usarla como condición en los "if" e "if else".
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/variable posicion.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>la variable "posicion" es la encargada del correcto funcionamiento de los carrusel</b></em>
+   </div>   
+</p>
+
+### 3. Evitar que el evento del Joy-con ocurriera al hacer click en un botón contenido dentro del mismo
+
+- **🚧Problema**: en un principio diseñe que cuando se hiciera click en un mando, en cualquiera de sus puntos, este se desplazara hasta la parte superior de la consola y, en caso de estar ya en la posición superior, volviera al lateral de la consola, pero esto hacía que al hacer click en alguno de sus botones, en lugar de suceder el evento del botón en concreto, sucediera el evento del mando .
+
+   - **💡Solución**: agregarle a los botones en el código de javascript un event.stopPropagation(); de esta forma, solo su evento particular sucedía al hacerle click en dicho botón.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/error evento Joycon.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>hacer click en cualquier punto del mando provocaba su desplazamiento y anulaba el resto de eventos de sus botones</b></em>
+   </div>   
+</p>
+
+### 4. Evitar que un evento ocurriera al hacer click por accidente en el Joy-con
+
+- **🚧Problema**: el hecho de haber diseñado que cuando se hiciera click en un mando, en cualquiera de sus puntos esto provocara su desplazamiento hacía que al hacer click en alguno de sus botones, si por accidente pinchabas fuera, ocurriera el evento del mando, siendo incómodo ya que implicaba un desplazamiento del mismo.
+
+   - **💡Solución 1**: eliminar el evento de desplazamiento del mando en cualquier punto del mismo, y asignarselo a su propio jostick, quedando mucho mas controlado y elegante en la ejecución, ya que además le he añadido movimiento al jostick al clickar sobre él.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/click en el jostick desmontado.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>ahora para provocar el desplazamiento del mando, hay que hacer click en el jostick</b></em>
+   </div>   
+</p>
+
 
 ## 🤝 Cómo Contribuir
 
@@ -252,7 +307,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para obt
 
 Agradecimentos a GeeksHubs Academy por los conocimientos que he podido adquirir estas dos semanas y que han hecho posible este proyecto, y a nuestro querido profesor David Ochando y su gran paciencia con nosotros.
 
-Quiero hacer una mención especial a mi mujer, Alba, ya que sin su apoyo e inspiracion ni este ni ningun otro proyecto llegarían a ser una realidad.
+Quiero hacer una mención especial a mi mujer, Alba, ya que sin su apoyo e inspiracion ni este ni ningún otro proyecto llegarían a ser una realidad.
 
 ¡Gracias por visitar **Nintendo Switch Interactive Console** y explorar mi proyecto!
 
