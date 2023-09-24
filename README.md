@@ -11,6 +11,23 @@ Desarrollada como parte del Bootcamp de Full Stack Developer de Geekshubs Academ
 
 **Nintendo Switch Interactive Console** es un proyecto que recrea una experiencia interactiva de una videoconsola Nintendo Switch utilizando HTML, CSS, JavaScript, GIT y GitHub. Este proyecto incluye una serie de elementos interactivos que simulan la consola y sus mandos, así como algunas funciones divertidas y creativas.
 
+## 📋 Contenido del Proyecto
+
+El proyecto **Nintendo Switch Interactive Console** consta de los siguientes archivos:
+
+1. **🔌index.html🔌**: Página principal que muestra una pequeña ambientación y que tiene un acceso en forma de botón a console.html.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/pantalla de inicio.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>Acceso a la consola</b></em>
+   </div>   
+</p>
+
+2. **🎮console.html🎮**: Esta es la página realmente importante, muestra la videoconsola Nintendo Switch y permite interactuar con ella.
+
 <p>
    <div align="center">
       <img src="img/imagenes README/posicion todo desmontado, consola encendida.jpeg" style="max-width: 100%;" width="500">
@@ -20,15 +37,9 @@ Desarrollada como parte del Bootcamp de Full Stack Developer de Geekshubs Academ
    </div>   
 </p>
 
-## 📋 Contenido del Proyecto
+3. **🎨styles.css🎨**: Archivo CSS que proporciona estilos y diseño a la página.
 
-El proyecto **Nintendo Switch Interactive Console** consta de los siguientes archivos:
-
-1. **🎮index.html🎮**: Página principal que muestra la videoconsola Nintendo Switch y permite interactuar con ella.
-
-2. **🎨styles.css🎨**: Archivo CSS que proporciona estilos y diseño a la página.
-
-3. **👾main.js👾**: Archivo JavaScript que controla las interacciones y funciones de la videoconsola.
+4. **👾main.js👾**: Archivo JavaScript que controla las interacciones y funciones de la videoconsola.
 
 ## 🔧 Tecnologías Utilizadas
 
