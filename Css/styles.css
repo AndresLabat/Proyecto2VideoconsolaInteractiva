@@ -85,16 +85,6 @@ body {
     transition: 2s;
     /* background-color: red; */
 }
-/* 
-.consola:hover{
-    width: 35em;
-    height: 15.4em;
-    margin-bottom: 2.8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 35em;
-} */
 
 .divConsolaDoc{
     width: 72.1em;
@@ -119,14 +109,6 @@ body {
     cursor: pointer;
 }
 
-/* .divDoc:hover{
-    width: 24.64em;
-    height: 15.4em;
-    margin-top: 5.25em;
-    position: absolute;
-    margin-left: 70em;
-} */
-
 .divDocInterno{
     width: 24.64em;
     height: 14.7em;
@@ -147,6 +129,19 @@ body {
     transition: 2s;
     position: absolute;
 }
+
+.doc:hover{
+    width: 24.64em;
+    height: 14em;
+    border: 0.1em solid black;
+    background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 100%);
+    border-radius: 0.7em;
+    display: flex;
+    margin-top: 0.7em;
+    position: absolute;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
 
 
 .divInternoDocLateral{
@@ -280,6 +275,24 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 0.2em;
+    transition: 1s;
+}
+
+#botonEncendido:hover{
+    width: 2.1em;
+    height: 1em;
+    border: 0.1em solid black;
+    margin-left: 1.4em;
+    background-color: #303235; 
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.2em;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 #volumenDown{
@@ -294,6 +307,24 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 0.2em;
+    transition: 1s;
+}
+
+#volumenDown:hover{
+    width: 2em;
+    height: 1em;
+    border: 0.1em solid black;
+    margin-left: 1.4em;
+    background-color: #303235; 
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.2em;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 #volumenUp{
@@ -308,6 +339,24 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 0.2em;
+    transition: 1s;
+}
+
+#volumenUp:hover{
+    width: 2em;
+    height: 1em;
+    border: 0.1em solid black;
+    margin-left: 0.56em;
+    background-color: #303235; 
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.2em;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .cuerpoPantalla{
@@ -319,6 +368,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .bordePantalla{
@@ -377,6 +427,20 @@ body {
     transition: 2s;
     margin-right: 29.8em;
     position: absolute;
+}
+
+.joyconIzquierdo:hover{
+    width: 5.145em;
+    height: 14em;
+    margin-top: 0.7em;
+    background-color: #55BEF4;
+    background: linear-gradient(to right, #2b627d  0%, #55BEF4 20%, #55BEF4 80%, #2b627d  100%);
+    border: 0.1em solid black;
+    border-radius: 2.8em 0.35em 0.35em 2.8em;
+    transition: 2s;
+    margin-right: 29.8em;
+    position: absolute;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .divBotonMenos{
@@ -494,6 +558,19 @@ body {
     transition: 2s;
     margin-left: 29.8em;
     position: absolute;
+}
+
+.joyconDerecho:hover{
+    width: 5.145em;
+    height: 14em;
+    margin-top: 0.7em;
+    background: linear-gradient(to right, #8d3931 0%, #F36154 20%, #F36154 80%, #8d3931 100%);
+    border: 0.1em solid black;
+    border-radius: 0.35em 2.8em 2.8em 0.35em;
+    transition: 2s;
+    margin-left: 29.8em;
+    position: absolute;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .divBotonMas{
@@ -619,6 +696,15 @@ body {
     width: 1.05em;
     height: 1.05em;
     cursor: pointer;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.divBotonHome:hover{
+    width: 1.05em;
+    height: 1.05em;
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .divBotonHome img{
@@ -645,24 +731,62 @@ body {
 
 #botonA{
     cursor: pointer;
+    transition: 1s;
+}
+
+#botonA:hover{
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 #botonB{
     cursor: pointer;
+    transition: 1s;
+}
+
+#botonB:hover{
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 #botonY{
     cursor: pointer;
+    transition: 1s;
+}
+
+#botonY:hover{
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 #botonX{
     cursor: pointer;
+    transition: 1s;
+}
+
+#botonX:hover{
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .izquierdo{
+    border-radius: 50%;
     cursor: pointer;
+    transition: 1s;
+}
+
+.izquierdo:hover{
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .derecho{
+    border-radius: 50%;
     cursor: pointer;
+    transition: 1s;
+}
+
+.derecho:hover{
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
