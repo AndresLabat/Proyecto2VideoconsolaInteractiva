@@ -276,7 +276,8 @@ body {
     align-items: center;
     cursor: pointer;
     border-radius: 0.2em;
-    transition: 1s;
+    user-select: none;
+    /* transition: 1s; */
 }
 
 #botonEncendido:hover{
@@ -295,6 +296,10 @@ body {
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
+#botonEncendido:active,  #volumenDown:active, #volumenUp:active{
+    transform: translate(-0.1em, -0.1em);
+}
+
 #volumenDown{
     width: 2em;
     height: 1em;
@@ -308,7 +313,8 @@ body {
     align-items: center;
     cursor: pointer;
     border-radius: 0.2em;
-    transition: 1s;
+    user-select: none;
+    /* transition: 1s; */
 }
 
 #volumenDown:hover{
@@ -340,7 +346,8 @@ body {
     align-items: center;
     cursor: pointer;
     border-radius: 0.2em;
-    transition: 1s;
+    user-select: none;
+    /* transition: 1s; */
 }
 
 #volumenUp:hover{
@@ -731,64 +738,29 @@ body {
     transform: rotate(-45deg);
 }
 
-#botonA{
+#botonA, #botonB, #botonY, #botonX{
     cursor: pointer;
-    transition: 1s;
+    user-select: none;
+    /* transition: 1s; */
 }
 
-#botonA:hover{
-    cursor: pointer;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-#botonB{
-    cursor: pointer;
-    transition: 1s;
-}
-
-#botonB:hover{
+#botonA:hover, #botonB:hover, #botonY:hover, #botonX:hover{
     cursor: pointer;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-#botonY{
-    cursor: pointer;
-    transition: 1s;
+#botonA:active, #botonB:active, #botonY:active, #botonX:active {
+    transform: translate(-0.1em, -0.1em);
 }
 
-#botonY:hover{
-    cursor: pointer;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-#botonX{
-    cursor: pointer;
-    transition: 1s;
-}
-
-#botonX:hover{
-    cursor: pointer;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-.izquierdo{
+.izquierdo, .derecho{
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
 }
 
-.izquierdo:hover{
+.izquierdo:hover, .derecho:hover{
     cursor: pointer;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-.derecho{
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.derecho:hover{
-    cursor: pointer;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
