@@ -97,7 +97,6 @@ body {
     flex-direction: column;
     text-align: center;
     color: inherit;
-    /* color: white; */
     color: #ff0000;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     font-family: "Press Start 2P", monospace;
