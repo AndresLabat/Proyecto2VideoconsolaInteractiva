@@ -261,12 +261,12 @@ const botonY = document.querySelector("#botonY");
 botonY.addEventListener("click", () => {
     event.stopPropagation();
     if (botonOnEncendido == true) {
-        if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4) {
+        if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 8) {
             pantalla.style.backgroundImage = "url('img/apertura nintendo eshop.jpg')";
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
             posicion = 5;
-        } else if (posicion === 5 || posicion === 6 || posicion === 7) {
+        } else if (posicion === 5 || posicion === 6 || posicion === 7 || posicion === 8) {
             pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
@@ -275,38 +275,19 @@ botonY.addEventListener("click", () => {
     }
 });
 
-// BOTON X (BRILLO DE LA PANTALLA):
+// BOTON X (PERFIL DE USUARIO):
 
 const botonX = document.querySelector("#botonX");
-let posicionBrillo = 0;
+
 
 botonX.addEventListener("click", () => {
     event.stopPropagation();
-    if (botonOnEncendido == true) {
-        if ((posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7) && posicionBrillo === 0) {
-            pantalla.style.filter = "brightness(0.8)";
-            posicionBrillo = 1;
-        } else if (posicionBrillo === 1) {
-            pantalla.style.filter = "brightness(0.6)";
-            posicionBrillo = 2;
-        } else if (posicionBrillo === 2) {
-            pantalla.style.filter = "brightness(0.8)";
-            posicionBrillo = 3;
-        } else if (posicionBrillo === 3) {
-            pantalla.style.filter = "brightness(1)";
-            posicionBrillo = 0;
-        }
-    }
-});
-
-
-// BOTON DE RESETEO (HOME):
-
-const home = document.querySelector(".divBotonHome");
-
-home.addEventListener("click", () => {
-    event.stopPropagation();
-    if (posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7) {
+    if ( posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7) {
+        pantalla.style.backgroundImage = "url('img/perfil de usuario inicial.jpg')";
+        pantalla.style.backgroundSize = "cover";
+        videoElement.style.display = "none";
+        posicion = 8;
+    } else if(posicion === 8){
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
         videoElement.style.display = "none";
@@ -315,7 +296,23 @@ home.addEventListener("click", () => {
 });
 
 
-// BOTON SUBIR VOLUMEN:
+
+// BOTON DE RESETEO (HOME):
+
+const home = document.querySelector(".divBotonHome");
+
+home.addEventListener("click", () => {
+    event.stopPropagation();
+    if (posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7 || posicion === 8) {
+        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
+        pantalla.style.backgroundSize = "cover";
+        videoElement.style.display = "none";
+        posicion = 0;
+    }
+});
+
+
+// BOTON SUBIR VOLUMEN (+vol):
 
 const audioElement = document.querySelector("#audio");
 const subirAudio = document.querySelector("#volumenUp");
@@ -330,13 +327,13 @@ subirAudio.addEventListener("click", function () {
         } else if (volumen === 0.6) {
             volumen = 1;
         }
-        
+
         audioElement.volume = volumen;
     }
 });
 
 
-// BOTON BAJAR VOLUMEN:
+// BOTON BAJAR VOLUMEN (-vol):
 
 const bajarAudio = document.querySelector("#volumenDown");
 
@@ -344,9 +341,9 @@ bajarAudio.addEventListener("click", function () {
     if (botonOnEncendido == true) {
         if (volumen === 1) {
             volumen = 0.6;
-        } else if (volumen === 0.6){
+        } else if (volumen === 0.6) {
             volumen = 0.2;
-        } else if (volumen === 0.2){
+        } else if (volumen === 0.2) {
             volumen = 0;
         }
 
@@ -359,10 +356,32 @@ bajarAudio.addEventListener("click", function () {
 
 const crucetaSuperior = document.querySelector("#crucetaSuperior");
 
+crucetaSuperior.addEventListener("click", () => {
+    event.stopPropagation();
+    if (botonOnEncendido == true) {
+        if (pantalla.style.filter == "brightness(0.6)") {
+            pantalla.style.filter = "brightness(0.8)";
+        } else if (pantalla.style.filter == "brightness(0.8)") {
+            pantalla.style.filter = "brightness(1)";
+        }
+    }
+});
+
 
 // BOTON CRUCETA INFERIOR:
 
 const crucetaInferior = document.querySelector("#crucetaInferior");
+
+crucetaInferior.addEventListener("click", () => {
+    event.stopPropagation();
+    if (botonOnEncendido == true) {
+        if (pantalla.style.filter == "brightness(1)") {
+            pantalla.style.filter = "brightness(0.8)";
+        } else if (pantalla.style.filter == "brightness(0.8)") {
+            pantalla.style.filter = "brightness(0.6)";
+        }
+    }
+});
 
 
 // BOTON CRUCETA DERECHA:
