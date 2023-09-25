@@ -355,6 +355,25 @@ bajarAudio.addEventListener("click", function () {
 });
 
 
+// BOTON CRUCETA SUPERIOR:
+
+const crucetaSuperior = document.querySelector("#crucetaSuperior");
+
+
+// BOTON CRUCETA INFERIOR:
+
+const crucetaInferior = document.querySelector("#crucetaInferior");
+
+
+// BOTON CRUCETA DERECHA:
+
+const crucetaDerecha = document.querySelector("#crucetaDerecha");
+
+
+// BOTON CRUCETA IZQUIERDA:
+
+const crucetaIzquierda = document.querySelector("#crucetaIzquierda");
+
 
 
 

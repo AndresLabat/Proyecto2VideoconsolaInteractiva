@@ -529,6 +529,12 @@ a {
     margin-bottom: 0.35em;
 }
 
+
+.botonMenos:active{
+    transform: translate(-0.1em, -0.1em);
+}
+
+
 .divJostick, .divCruceta{
     width: 5.145em;
     height: 3.92em;
@@ -577,6 +583,10 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 0.7em;
+}
+
+.botonCapturaPantalla:active{
+    transform: translate(-0.1em, -0.1em);
 }
 
 .botonCapturaPantallaCirculoInterior{
@@ -657,6 +667,10 @@ a {
     margin-left: 0.56em;
 }
 
+.botonMas:active{
+    transform: translate(-0.1em, -0.1em);
+}
+
 .row1, .row2, .row3{
     display: flex;
     width: 1.05em;
@@ -707,6 +721,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.botonCruceta:active{
+    transform: translate(-0.1em, -0.1em);
 }
 
 .trianguloSuperior{
