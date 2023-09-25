@@ -155,7 +155,7 @@ botonOn.addEventListener("click", () => {
         luzEncendido.style.backgroundColor = "#D6FF99";
         audioElement.play();
         videoElement.play();
-        volumen = 0;
+        volumen = 0.2;
         posicion = 0;
         brilloActual = 100;
         saturacionActual = 100;
@@ -441,7 +441,7 @@ crucetaIzquierda.addEventListener("click", function () {
 });
 
 
-// BOTON MAS:
+// BOTON MAS (+):
 
 const simboloMas = document.querySelector(".botonMas");
 
@@ -455,7 +455,7 @@ simboloMas.addEventListener("click", (event) => {
 });
 
 
-// BOTON MENOS:
+// BOTON MENOS (-):
 
 const simboloMenos = document.querySelector(".botonMenos");
 
