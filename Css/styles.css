@@ -595,6 +595,20 @@ a {
     margin-bottom: 0.7em;
 }
 
+.botonCapturaPantalla:hover{
+    width: 0.84em;
+    height: 0.84em;
+    border: 0.1em solid black;
+    background-color: #303235; 
+    margin-right: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.7em;
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
 .botonCapturaPantalla:active{
     transform: translate(-0.1em, -0.1em);
 }

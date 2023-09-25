@@ -156,9 +156,10 @@ botonOn.addEventListener("click", () => {
         audioElement.play();
         videoElement.play();
         volumen = 0;
-        botonOnEncendido = true;
         posicion = 0;
         brilloActual = 100;
+        saturacionActual = 100;
+        botonOnEncendido = true;
     }
     audioElement.volume = volumen;
 });
@@ -284,12 +285,12 @@ const botonX = document.querySelector("#botonX");
 
 botonX.addEventListener("click", () => {
     event.stopPropagation();
-    if ( posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7) {
+    if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7) {
         pantalla.style.backgroundImage = "url('img/perfil de usuario inicial.jpg')";
         pantalla.style.backgroundSize = "cover";
         videoElement.style.display = "none";
         posicion = 8;
-    } else if(posicion === 8){
+    } else if (posicion === 8) {
         pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
         pantalla.style.backgroundSize = "cover";
         videoElement.style.display = "none";
@@ -355,15 +356,17 @@ bajarAudio.addEventListener("click", function () {
 
 // BOTON CRUCETA SUPERIOR:
 
-const crucetaSuperior = document.querySelector("#crucetaSuperior");
 let brilloActual = 100;
+let saturacionActual = 100;
 
-crucetaSuperior.addEventListener("click", function() {
+const crucetaSuperior = document.querySelector("#crucetaSuperior");
+
+crucetaSuperior.addEventListener("click", function () {
     if (botonOnEncendido == true) {
         if (brilloActual < 100) {
             brilloActual += 20;
         }
-        pantalla.style.filter = `brightness(${brilloActual}%)`;
+        pantalla.style.filter = `brightness(${brilloActual}%) saturate(${saturacionActual}%)`;
     }
 });
 
@@ -372,24 +375,42 @@ crucetaSuperior.addEventListener("click", function() {
 
 const crucetaInferior = document.querySelector("#crucetaInferior");
 
-        crucetaInferior.addEventListener("click", function() {
-            if (botonOnEncendido == true) {
-            if (brilloActual >= 60) {
-                brilloActual -= 20;
-            }
-            pantalla.style.filter = `brightness(${brilloActual}%)`;
+crucetaInferior.addEventListener("click", function () {
+    if (botonOnEncendido == true) {
+        if (brilloActual >= 60) {
+            brilloActual -= 20;
         }
-        });
+        pantalla.style.filter = `brightness(${brilloActual}%) saturate(${saturacionActual}%)`;
+    }
+});
 
 
 // BOTON CRUCETA DERECHA:
 
 const crucetaDerecha = document.querySelector("#crucetaDerecha");
 
+crucetaDerecha.addEventListener("click", function () {
+    if (botonOnEncendido == true) {
+        if (saturacionActual < 100) {
+            saturacionActual += 25;
+        }
+        pantalla.style.filter = `brightness(${brilloActual}%) saturate(${saturacionActual}%)`;
+    }
+});
+
 
 // BOTON CRUCETA IZQUIERDA:
 
 const crucetaIzquierda = document.querySelector("#crucetaIzquierda");
+
+crucetaIzquierda.addEventListener("click", function () {
+    if (botonOnEncendido == true) {
+        if (saturacionActual >= 0) {
+            saturacionActual -= 25;
+        }
+        pantalla.style.filter = `brightness(${brilloActual}%) saturate(${saturacionActual}%)`;
+    }
+});
 
 
 // BOTON MAS:
