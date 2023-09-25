@@ -74,16 +74,6 @@ Este proyecto se desarrolló en una rama separada llamada "dev" que se creó des
 
 El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funcionalidades destacadas:
 
-- **Botón On**: Puedes encender y apagar la videoconsola con el botón de encendido, esto afectará al sonido, a la pantalla y también a la luz lateral del Dock.
-
-<p>
-   <div align="center">
-      <img src="img/imagenes README/boton On.jpeg" style="max-width: 100%;" width="500">
-   </div>    
-   <div align="center">
-      <em><b>El botón ON controla el encendido y apagado de la consola</b></em>
-   </div>   
-</p>
 
 - **Dock (Base de carga)**: Se puede quitar y poner la consola dentro del Dock. Si pulsamos sobre este, la consola se desplaza hacia el lateral, imitando cuando la quitamos del dock en la vida real, y los joycons se desplazan tambien imitando cuando los sacamos de la consola, quedando uno al lado del otro y ambos en la parte superior de la pantalla, de forma que se ve la consola a la izquierda, los mandos encima de esta, y el doc a la derecha de la consola, si volvemos a hacer click en el dock, todo vuelve a su estado original, mandos y consola a su posicion inicial dentro del dock.
 
@@ -125,6 +115,30 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
    </div>   
 </p>
 
+- **Botón On**: Puedes encender y apagar la videoconsola con el botón de encendido, esto afectará al sonido, a la pantalla y también a la luz lateral del Dock.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/boton On.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>El botón ON controla el encendido y apagado de la consola</b></em>
+   </div>   
+</p>
+
+- **Botón +Vol**: El botón +Vol es el encargado de subir el volumen del audio, siempre que la consola esta encendida, aunque este audio comienza con 0 de volumen para evitar sobresaltos.
+
+- **Botón -Vol**: El botón -Vol es el encargado de bajar el volumen en el caso de que lo hayamos subido previamente.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/volumen.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>Al hacer click en el botón +Vol se sube el volumen un 40% cada vez y en el botón -Vol se baja la misma cantidad hasta que no se oye nada</b></em>
+   </div>   
+</p>
+
 - **Botones A y B**: Los botones A y B permiten avanzar y retroceder entre los carruseles de imágenes y videos. 
 
 <p>
@@ -145,7 +159,7 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
    </div>   
 </p>
 
-- **Botón Y (eShop)**: El botón Y simula una visita a la eShop de Nintendo con un carousel de imágenes, si se vuelve a pulsar el boton Y, se vuelve al carousel original.
+- **Botón Y (eShop)**: El botón Y simula una visita a la eShop de Nintendo con un carousel de imágenes, si se vuelve a pulsar el boton Y, se vuelve al carrusel original.
 
 <p>
    <div align="center">
@@ -165,23 +179,14 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
    </div>   
 </p>
 
-- **Botón X (Brillo de Pantalla)**: El botón X controla el brillo de la pantalla con tres niveles diferentes.
+- **Botón X (Brillo de Pantalla)**: El botón X accede al menu de cambio de usuario compuesto por una sola imagen, si vuelves a hacer click en el mismo, muestra la pantalla inicial de la consola.
 
 <p>
    <div align="center">
-      <img src="img/imagenes README/brillo al maximo.jpeg" style="max-width: 100%;" width="500">
+      <img src="img/imagenes README/cambio de usuario.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>Aqui vemos la consola con el brillo al máximo</b></em>
-   </div>   
-</p>
-
-<p>
-   <div align="center">
-      <img src="img/imagenes README/brillo a la mitad.jpeg" style="max-width: 100%;" width="500">
-   </div>    
-   <div align="center">
-      <em><b>Al pulsar el botón X, cambiamos ese brillo, tiene 3 posiciones distintas</b></em>
+      <em><b>Al pulsar el botón X, nos muestra una imagen de cambio de usuario</b></em>
    </div>   
 </p>
 
@@ -192,27 +197,82 @@ El proyecto **Nintendo Switch Interactive Console** incluye las siguientes funci
       <img src="img/imagenes README/boton home.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>Al pulsar el botón Home, estemos en el carrusel o video que estemos, se mostrara la imagen del menú de la consola</b></em>
+      <em><b>Al pulsar el botón Home, estemos en el carrusel o video que estemos, se mostrará la imagen del menú de la consola</b></em>
    </div>   
 </p>
 
-- **Botón +Vol**: El botón +Vol es el encargado de subir el volumen del audio, siempre que la consola esta encendida, aunque este audio comienza con 0 de volumen para evitar sobresaltos.
-
-- **Botón -Vol**: El botón -Vol es el encargado de bajar el volumen en el caso de que lo hayamos subido previamente.
+- **Botón Captura de pantalla**: Este botón muestra una imagen cómica de una captura de pantalla, si vuelves a hacer click en el mismo, muestra la pantalla inicial de la consola.
 
 <p>
    <div align="center">
-      <img src="img/imagenes README/volumen.jpeg" style="max-width: 100%;" width="500">
+      <img src="img/imagenes README/captura de pantalla.jpeg" style="max-width: 100%;" width="500">
    </div>    
    <div align="center">
-      <em><b>Al hacer click en el botón +Vol se sube el volumen un 30% cada vez y en el botón -Vol se baja la misma cantidad hasta que no se oye nada</b></em>
+      <em><b>Al pulsar el botón Captura de pantalla, estemos en el carrusel o video que estemos, se mostrara la imagen cómica de la captura</b></em>
+   </div>   
+</p>
+
+- **Botón +**: El botón + tiene como única función poner en marcha de nuevo el video del carrusel principal en caso de haberlo parado previamente con el botón menos.
+
+- **Botón -**: El botón - se encarga de pausar el video del carrusel principal.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/video.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>Al pulsar el botón Captura de pantalla, estemos en el carrusel o video que estemos, se mostrara la imagen cómica de la captura</b></em>
+   </div>   
+</p>
+
+- **Botón cruceta superior**: Sirve para controlar el brillo de la pantalla en caso de haberlo bajado previamente con el botón cruceta inferior, asciende un 20% con cada click.
+
+- **Botón cruceta inferior**: desciende el brillo de la consola un 20% cada vez que se pulsa hasta un máximo del 40% total.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/brillo al maximo.jpg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>Podemos controlar el brillo de la pantalla con las crucetas superior e inferior</b></em>
+   </div>   
+</p>
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/brillo minimo.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>Al descenderlo con la cruceta inferior, podemos llegar a dejarlo a un 40% de su brillo total</b></em>
+   </div>   
+</p>
+
+- **Botón cruceta izquierda**: Sirve para descender la saturación de la pantalla, concretamente un 25% con cada click.
+
+- **Botón cruceta derecha**: con este botón podemos recuperar esa saturación cambiada con anterioridad, de nuevo con un 25% cada vez.
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/saturacion al maximo.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>Podemos controlar la saturación de la pantalla con las crucetas izquierda y derecha</b></em>
+   </div>   
+</p>
+
+<p>
+   <div align="center">
+      <img src="img/imagenes README/saturacion al minimo.jpeg" style="max-width: 100%;" width="500">
+   </div>    
+   <div align="center">
+      <em><b>Al bajarla con la cruceta izquierda, podemos llegar a una saturación máxima del 0%</b></em>
    </div>   
 </p>
 
 
- Todo esto esta sobre un video de fondo de imita un salón con una chimenea encendida y lluvia cayendo en el exterior, mojando la ventana, queriendo simular el calor del hogar y un momento de confort en el que disfrutas de tu tiempo de ocio y relax jugando a la videoconsola.
+ Todo esto está sobre un vídeo de fondo de imita un salón con una chimenea encendida y lluvia cayendo en el exterior, mojando la ventana, queriendo simular el calor del hogar y un momento de confort en el que disfrutas de tu tiempo de ocio y relax jugando a la videoconsola.
 
- Este proyecto es una dedicatoria a mi mujer y a su gran afición por la Nintendo Switch, intentando simular lo que ella describe como "la definición de un buen día", lluvia exterior, el hogar, calor y su gran aficion, la Nintendo Switch.
+ Este proyecto es una dedicatoria a mi mujer y a su gran afición por la Nintendo Switch, intentando simular lo que ella describe como "la definición de un buen día", lluvia exterior, el hogar, calor, y su gran afición, la Nintendo Switch.
 
 
 ## 🎯Problemas y Soluciones
