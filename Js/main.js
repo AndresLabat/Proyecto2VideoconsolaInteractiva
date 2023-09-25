@@ -154,6 +154,7 @@ botonOn.addEventListener("click", () => {
         pantalla.style.filter = "none";
         luzEncendido.style.backgroundColor = "#D6FF99";
         audioElement.play();
+        videoElement.play();
         volumen = 0;
         botonOnEncendido = true;
         posicion = 0;
@@ -391,6 +392,51 @@ const crucetaDerecha = document.querySelector("#crucetaDerecha");
 const crucetaIzquierda = document.querySelector("#crucetaIzquierda");
 
 
+// BOTON MAS:
+
+const simboloMas = document.querySelector(".botonMas");
+
+simboloMas.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (botonOnEncendido == true) {
+        if (posicion === 4) {
+            videoElement.play();
+        }
+    }
+});
+
+
+// BOTON MENOS:
+
+const simboloMenos = document.querySelector(".botonMenos");
+
+simboloMenos.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (botonOnEncendido == true) {
+        if (posicion === 4) {
+            videoElement.pause();
+        }
+    }
+});
+
+
+// PARA HACER QUE FUNCIONE EL HOVER DEL SIMBOLO + (HOVERED):
+
+const rows = document.querySelectorAll(".row");
+
+rows.forEach((row) => {
+    row.addEventListener("mouseenter", () => {
+        rows.forEach((otherRow) => {
+            otherRow.classList.add("hovered");
+        });
+    });
+
+    row.addEventListener("mouseleave", () => {
+        rows.forEach((otherRow) => {
+            otherRow.classList.remove("hovered");
+        });
+    });
+});
 
 
 

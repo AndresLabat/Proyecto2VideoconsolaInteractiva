@@ -529,6 +529,16 @@ a {
     margin-bottom: 0.35em;
 }
 
+.botonMenos:hover{
+    width: 1.05em;
+    height: 0.35em;
+    background-color: #303235; 
+    margin-right: 0.56em;
+    margin-bottom: 0.35em;
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
 
 .botonMenos:active{
     transform: translate(-0.1em, -0.1em);
@@ -667,6 +677,14 @@ a {
     margin-left: 0.56em;
 }
 
+.botonMas:hover{
+    width: 1.05em;
+    height: 1.05em;
+    margin-left: 0.56em;
+    /* cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+}
+
 .botonMas:active{
     transform: translate(-0.1em, -0.1em);
 }
@@ -686,6 +704,14 @@ a {
     background-color: #303235;
     width: 0.35em;
     height: 0.35em;
+}
+
+.row.hovered {
+    background-color: #303235;
+    width: 0.35em;
+    height: 0.35em;
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .divContieneCirculos{
