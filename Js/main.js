@@ -157,6 +157,7 @@ botonOn.addEventListener("click", () => {
         volumen = 0;
         botonOnEncendido = true;
         posicion = 0;
+        brilloActual = 100;
     }
     audioElement.volume = volumen;
 });
@@ -296,7 +297,6 @@ botonX.addEventListener("click", () => {
 });
 
 
-
 // BOTON DE RESETEO (HOME):
 
 const home = document.querySelector(".divBotonHome");
@@ -333,7 +333,7 @@ subirAudio.addEventListener("click", function () {
 });
 
 
-// BOTON BAJAR VOLUMEN (-vol):
+// BOTON BAJAR VOLUMEN:
 
 const bajarAudio = document.querySelector("#volumenDown");
 
@@ -355,15 +355,14 @@ bajarAudio.addEventListener("click", function () {
 // BOTON CRUCETA SUPERIOR:
 
 const crucetaSuperior = document.querySelector("#crucetaSuperior");
+let brilloActual = 100;
 
-crucetaSuperior.addEventListener("click", () => {
-    event.stopPropagation();
+crucetaSuperior.addEventListener("click", function() {
     if (botonOnEncendido == true) {
-        if (pantalla.style.filter == "brightness(0.6)") {
-            pantalla.style.filter = "brightness(0.8)";
-        } else if (pantalla.style.filter == "brightness(0.8)") {
-            pantalla.style.filter = "brightness(1)";
+        if (brilloActual < 100) {
+            brilloActual += 20;
         }
+        pantalla.style.filter = `brightness(${brilloActual}%)`;
     }
 });
 
@@ -372,16 +371,14 @@ crucetaSuperior.addEventListener("click", () => {
 
 const crucetaInferior = document.querySelector("#crucetaInferior");
 
-crucetaInferior.addEventListener("click", () => {
-    event.stopPropagation();
-    if (botonOnEncendido == true) {
-        if (pantalla.style.filter == "brightness(1)") {
-            pantalla.style.filter = "brightness(0.8)";
-        } else if (pantalla.style.filter == "brightness(0.8)") {
-            pantalla.style.filter = "brightness(0.6)";
+        crucetaInferior.addEventListener("click", function() {
+            if (botonOnEncendido == true) {
+            if (brilloActual >= 60) {
+                brilloActual -= 20;
+            }
+            pantalla.style.filter = `brightness(${brilloActual}%)`;
         }
-    }
-});
+        });
 
 
 // BOTON CRUCETA DERECHA:

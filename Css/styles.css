@@ -723,6 +723,19 @@ a {
     justify-content: center;
 }
 
+.botonCruceta:hover{
+    width: 1.19em;
+    height: 1.19em;
+    border-radius: 50%;
+    border: 0.1em solid black;
+    background: linear-gradient(to right, #303235 0%, #5d6167 30%, #5d6167 70%, #303235  100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
 .botonCruceta:active{
     transform: translate(-0.1em, -0.1em);
 }
@@ -843,7 +856,7 @@ a {
     /* transition: 1s; */
 }
 
-.izquierdo:hover, .derecho:hover, #crucetaSuperior:hover, #crucetaInferior:hover{
+.izquierdo:hover, .derecho:hover{
     cursor: pointer;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
