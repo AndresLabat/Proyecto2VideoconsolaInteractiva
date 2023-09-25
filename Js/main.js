@@ -264,7 +264,7 @@ const botonY = document.querySelector("#botonY");
 botonY.addEventListener("click", () => {
     event.stopPropagation();
     if (botonOnEncendido == true) {
-        if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 8) {
+        if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 8 || posicion === 9) {
             pantalla.style.backgroundImage = "url('img/apertura nintendo eshop.jpg')";
             pantalla.style.backgroundSize = "cover";
             videoElement.style.display = "none";
@@ -278,23 +278,25 @@ botonY.addEventListener("click", () => {
     }
 });
 
+
 // BOTON X (PERFIL DE USUARIO):
 
 const botonX = document.querySelector("#botonX");
 
-
 botonX.addEventListener("click", () => {
     event.stopPropagation();
-    if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7) {
-        pantalla.style.backgroundImage = "url('img/perfil de usuario inicial.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none";
-        posicion = 8;
-    } else if (posicion === 8) {
-        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none";
-        posicion = 0;
+    if (botonOnEncendido == true) {
+        if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7 || posicion === 9) {
+            pantalla.style.backgroundImage = "url('img/perfil de usuario inicial.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 8;
+        } else if (posicion === 8) {
+            pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 0;
+        }
     }
 });
 
@@ -305,13 +307,39 @@ const home = document.querySelector(".divBotonHome");
 
 home.addEventListener("click", () => {
     event.stopPropagation();
-    if (posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7 || posicion === 8) {
-        pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
-        pantalla.style.backgroundSize = "cover";
-        videoElement.style.display = "none";
-        posicion = 0;
+    if (botonOnEncendido == true) {
+        if (posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5 || posicion === 6 || posicion === 7 || posicion === 8 || posicion === 9) {
+            pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 0;
+        }
     }
 });
+
+
+// BOTON CAPTURA DE PANTALLA:
+
+const capturaPantalla = document.querySelector(".botonCapturaPantalla");
+
+capturaPantalla.addEventListener("click", () => {
+    event.stopPropagation();
+    if (botonOnEncendido == true) {
+        if (posicion === 0 || posicion === 1 || posicion === 2 || posicion === 3 || posicion === 4 || posicion === 5
+            || posicion === 6 || posicion === 7 || posicion === 8) {
+            pantalla.style.backgroundImage = "url('img/capturar pantalla.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 9;
+        } else if (posicion === 9) {
+            pantalla.style.backgroundImage = "url('img/menu nsw.jpg')";
+            pantalla.style.backgroundSize = "cover";
+            videoElement.style.display = "none";
+            posicion = 0;
+        }
+    }
+});
+
 
 
 // BOTON SUBIR VOLUMEN (+vol):
