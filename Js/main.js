@@ -415,7 +415,6 @@ rows.forEach((row) => {
             otherRow.classList.add("hovered");
         });
     });
-
     row.addEventListener("mouseleave", () => {
         rows.forEach((otherRow) => {
             otherRow.classList.remove("hovered");
